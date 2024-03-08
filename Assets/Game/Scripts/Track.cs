@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class Track : MonoBehaviour
 {
-  public Transform[] waypoints;
+  public Transform[] waypoints;  // Depicts the pathing of the animals.
 
-  // Start is called before the first frame update
-  void Start() {
+  public Vector2 getWaypoint(int index) {
+    return (Vector2)waypoints[index].position;
   }
 
-  // Update is called once per frame
-  void Update() {
-  }
-
+  /**
+   * Draw circular overlay for waypoints and connection lines toward waypoints.
+   */
   private void OnDrawGizmos() {
+    // For every waypoint.
     for (int i = 0; i < waypoints.Length; ++i) {
+      // Circular overlay.
       Gizmos.color = Color.cyan;
       Gizmos.DrawSphere(waypoints[i].position, 0.2f);
+
+      // Connection lines.
       if (i > 0) {
         Gizmos.DrawLine(waypoints[i - 1].position, waypoints[i].position);
       }
