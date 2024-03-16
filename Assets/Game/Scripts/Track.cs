@@ -6,6 +6,7 @@ public class Track : MonoBehaviour
 {
   public Transform[] waypoints;  // Depicts the pathing of the animals.
 
+
   /**
    * Draw circular overlay for waypoints and connection lines toward waypoints.
    */
@@ -14,7 +15,7 @@ public class Track : MonoBehaviour
     for (int i = 0; i < waypoints.Length; ++i) {
       // Circular overlay.
       Gizmos.color = Color.cyan;
-      Gizmos.DrawSphere(waypoints[i].position, 0.2f);
+      Gizmos.DrawSphere(waypoints[i].position, 0.15f);
 
       // Connection lines.
       if (i > 0) {

@@ -7,23 +7,44 @@ public class Animal : MonoBehaviour {
   public int damage = 1;      // Amount of damage done when animal gets through.
   public int health = 1;      // How tanky the animal is.
   public int value;           // Amount of money to give when dead.
-  private int index;
+  private int _waypointIndex;  // Index of the waypoint it is going towards.
 
 
   private void Update() {
-    transform.position = (Vector2)getNextPosition();
-    
-    if (Vector2.Distance((Vector2)transform.position, GameData.instance.track.getWaypointPosition(index)) < 0.2f) {
-      ++index;
-      if (index >= GameData.instance.track.waypoints.Length) {
+    Vector2 nextPosition = getNextPosition();
+
+    // Readjust rotation of the Sprite.
+    Vector2 direction = (Vector2)gameObject.transform.position - nextPosition;
+    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+    transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    if (direction.x < 0) {  // Going right, flip Y to make it upright.
+      GetComponent<SpriteRenderer>().flipY = true;
+    } else {  // Going left, unflip.
+      GetComponent<SpriteRenderer>().flipY = false;
+    }
+
+    // Move animal to next position.
+    transform.position = nextPosition;
+
+    // Reached a waypoint, move to next waypoint.
+    if (Vector2.Distance(transform.position, GameData.instance.track.getWaypointPosition(_waypointIndex)) < 0.002f) {
+      ++_waypointIndex;
+      
+      // Reached the end of the track..
+      if (_waypointIndex >= GameData.instance.track.waypoints.Length) {
         Destroy(gameObject);
       }
     }
   }
 
 
+  /**
+   * Calculates the next position to go to.
+   *
+   * @return Vector2 - the next position.
+   */
   private Vector2 getNextPosition() {
-    Vector2 nextPosition = GameData.instance.track.getWaypointPosition(index);
+    Vector2 nextPosition = GameData.instance.track.getWaypointPosition(_waypointIndex);
     Vector2 direction = nextPosition - (Vector2)transform.position;
 
     return (Vector2)transform.position + speed * Time.deltaTime * direction.normalized;
