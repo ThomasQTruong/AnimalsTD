@@ -6,10 +6,6 @@ public class Track : MonoBehaviour
 {
   public Transform[] waypoints;  // Depicts the pathing of the animals.
 
-  public Vector2 getWaypoint(int index) {
-    return (Vector2)waypoints[index].position;
-  }
-
   /**
    * Draw circular overlay for waypoints and connection lines toward waypoints.
    */
@@ -25,5 +21,13 @@ public class Track : MonoBehaviour
         Gizmos.DrawLine(waypoints[i - 1].position, waypoints[i].position);
       }
     }
+  }
+
+
+  /**
+   * Retrieve a waypoint's position.
+   */
+  public Vector2 getWaypointPosition(int index) {
+    return waypoints[index].position;
   }
 }
