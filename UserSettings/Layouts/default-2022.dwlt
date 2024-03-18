@@ -19,9 +19,15 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Git for Unity
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
+=======
+  m_Title: Scene
+  m_RootView: {fileID: 8}
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -32,12 +38,70 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneHierarchyWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 296
+    height: 275
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 2}
+  - {fileID: 5}
+  m_Position:
+    serializedVersion: 2
+    x: 1624
+    y: 0
+    width: 296
+    height: 947
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 105
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 9}
+=======
+  - {fileID: 11}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   - {fileID: 3}
   m_Position:
     serializedVersion: 2
@@ -45,11 +109,19 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 503, y: 492}
   m_MaxSize: {x: 18097, y: 14042}
   vertical: 0
   controlID: 104
 --- !u!114 &3
+=======
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 104
+--- !u!114 &5
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,6 +136,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1465
     y: 0
     width: 455
@@ -77,6 +150,21 @@ MonoBehaviour:
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &4
+=======
+    x: 0
+    y: 275
+    width: 296
+    height: 672
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 17}
+  - {fileID: 15}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &6
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,13 +174,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: 
+=======
+  m_Name: ProjectBrowser
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 363
     height: 561
   m_MinSize: {x: 201, y: 221}
@@ -103,6 +196,18 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
+=======
+    width: 272
+    height: 785
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &7
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,12 +217,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: ProjectBrowser
+=======
+  m_Name: ConsoleWindow
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 561
     width: 1465
     height: 386
@@ -130,6 +240,19 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &6
+=======
+    y: 785
+    width: 1624
+    height: 162
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &8
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,22 +265,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 7}
   - {fileID: 2}
   - {fileID: 8}
+=======
+  - {fileID: 9}
+  - {fileID: 4}
+  - {fileID: 10}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1920
     height: 997
+<<<<<<< HEAD
   m_MinSize: {x: 875, y: 542}
+=======
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
+<<<<<<< HEAD
 --- !u!114 &7
+=======
+--- !u!114 &9
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +316,11 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+<<<<<<< HEAD
 --- !u!114 &8
+=======
+--- !u!114 &10
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,7 +341,11 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!114 &9
+=======
+--- !u!114 &11
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,12 +358,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 10}
   - {fileID: 5}
+=======
+  - {fileID: 12}
+  - {fileID: 7}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1465
     height: 947
   m_MinSize: {x: 403, y: 492}
@@ -226,6 +377,15 @@ MonoBehaviour:
   vertical: 1
   controlID: 38
 --- !u!114 &10
+=======
+    width: 1624
+    height: 947
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 58
+--- !u!114 &12
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,12 +398,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 4}
   - {fileID: 11}
+=======
+  - {fileID: 6}
+  - {fileID: 13}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1465
     height: 561
   m_MinSize: {x: 403, y: 221}
@@ -251,6 +417,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 39
 --- !u!114 &11
+=======
+    width: 1624
+    height: 785
+  m_MinSize: {x: 200, y: 50}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 59
+--- !u!114 &13
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,11 +435,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: 
+=======
+  m_Name: SceneView
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 363
     y: 0
     width: 1102
@@ -278,6 +458,119 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
+=======
+    x: 272
+    y: 0
+    width: 1352
+    height: 785
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1304
+    y: -1007
+    width: 1350
+    height: 875
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1920, y: 1080}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 1350
+      height: 854
+    m_Scale: {x: 0.703125, y: 0.703125}
+    m_Translation: {x: 675, y: 427}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -960
+      y: -607.2889
+      width: 1920
+      height: 1214.5778
+    m_MinimalGUI: 1
+  m_defaultScale: 0.703125
+  m_LastWindowPixelSize: {x: 1350, y: 875}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &15
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,10 +590,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1465
     y: 73
     width: 454
     height: 926
+=======
+    x: 1624
+    y: 348
+    width: 295
+    height: 651
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -322,10 +622,17 @@ MonoBehaviour:
   changeTab: 3
   activeTab: 3
   initProjectView:
+<<<<<<< HEAD
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
     lastCheckUserChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
+=======
+    hasCompletedInitialCheck: 1
+    isUserDataPresent: 1
+    lastCheckUserChangedEvent:
+      updatedTimeString: 2024-03-07T15:32:21.850-08:00
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       cacheType: 8
   branchesView:
     treeLocals:
@@ -389,7 +696,10 @@ MonoBehaviour:
       folders:
         keys:
         - Remote branches
+<<<<<<< HEAD
         - origin
+=======
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         values:
         - path: Remote branches
           label: Remote branches
@@ -401,6 +711,7 @@ MonoBehaviour:
           isActive: 0
           treeIsCheckable: 0
           checkState: 0
+<<<<<<< HEAD
         - path: origin
           label: origin
           level: 1
@@ -411,6 +722,8 @@ MonoBehaviour:
           isActive: 0
           treeIsCheckable: 0
           checkState: 0
+=======
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       checkedFileNodes:
         keys: []
         values: []
@@ -430,6 +743,7 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+<<<<<<< HEAD
       - path: origin
         label: origin
         level: 1
@@ -450,6 +764,8 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+=======
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       selectedNode:
         path: 
         label: 
@@ -467,6 +783,7 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
+<<<<<<< HEAD
       updatedTimeString: 2024-03-16T14:24:53.334-07:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
@@ -478,6 +795,19 @@ MonoBehaviour:
     currentRemote:
       name: origin
       url: https://github.com/ThomasQTruong/AnimalsTD
+=======
+      updatedTimeString: 2024-03-07T15:32:34.472-08:00
+      cacheType: 2
+    lastCurrentBranchAndRemoteChange:
+      updatedTimeString: 2024-03-07T15:32:34.474-08:00
+      cacheType: 1
+    currentBranch:
+      name: master
+      tracking: 
+    currentRemote:
+      name: origin
+      url: https://github.com/ThomasQTruong/Animals-Tower-Defense/tree/master
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       login: 
       user: 
       host: 
@@ -485,10 +815,15 @@ MonoBehaviour:
       token: 
     localBranches:
     - name: master
+<<<<<<< HEAD
       tracking: origin/master
     remoteBranches:
     - name: origin/HEAD
       tracking: '[None]'
+=======
+      tracking: 
+    remoteBranches: []
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   changesView:
     currentBranchHasUpdate: 0
     currentStatusEntriesHasUpdate: 0
@@ -498,6 +833,7 @@ MonoBehaviour:
     currentBranch: master
     treeScroll: {x: 0, y: 0}
     treeChanges:
+<<<<<<< HEAD
       assets:
         keys: []
         values: []
@@ -1903,12 +2239,37 @@ MonoBehaviour:
       - path: Assets\Game\Scripts
         label: Scripts
         level: 2
+=======
+      assets:
+        keys: []
+        values: []
+      folders:
+        keys: []
+        values: []
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: 
+      pathSeparator: \
+      displayRootNode: 0
+      isSelectable: 1
+      isCheckable: 1
+      isUsingGlobalSelection: 1
+      nodes:
+      - path: 
+        label: 
+        level: -1
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         isFolder: 1
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
+<<<<<<< HEAD
         treeIsCheckable: 0
+=======
+        treeIsCheckable: 1
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         checkState: 0
         isLocked: 0
         gitStatusEntry:
@@ -1918,6 +2279,7 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+<<<<<<< HEAD
       - path: Assets\Game\Scripts\Track.cs
         label: Track.cs
         level: 3
@@ -1939,6 +2301,12 @@ MonoBehaviour:
       - path: Assets\Game\Scripts\Track.cs.meta
         label: Track.cs.meta
         level: 4
+=======
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -1948,6 +2316,7 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
+<<<<<<< HEAD
           path: Assets\Game\Scripts\Track.cs.meta
           fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Track.cs.meta
           projectPath: Assets\Game\Scripts\Track.cs.meta
@@ -1966,12 +2335,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
+=======
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
           path: 
           fullPath: 
           projectPath: 
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+<<<<<<< HEAD
       - path: Assets\Scenes\Game.unity
         label: Game.unity
         level: 2
@@ -1990,6 +2362,125 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 3
           workTreeStatus: 0
+=======
+    gitStatusEntries: []
+    changedFilesText: No changed files
+    lastCurrentBranchChangedEvent:
+      updatedTimeString: 2024-03-08T03:57:19.408-08:00
+      cacheType: 1
+    lastStatusEntriesChangedEvent:
+      updatedTimeString: 2024-03-08T03:57:14.827-08:00
+      cacheType: 6
+    lastLocksChangedEvent:
+      updatedTimeString: 2024-03-08T03:56:21.495-08:00
+      cacheType: 7
+  historyView:
+    currentLogHasUpdate: 0
+    currentTrackingStatusHasUpdate: 0
+    logEntries:
+    - commitID: 38dd5d0b11a6b86efce2e5700686585c1a927f99
+      mergeA: 
+      mergeB: 
+      authorName: truong, thomas
+      authorEmail: truongthomasq@gmail.com
+      commitEmail: truongthomasq@gmail.com
+      commitName: truong, thomas
+      summary: Initial commit
+      description: 
+      timeString: 2024-03-07T15:32:25.000-08:00
+      commitTimeString: 2024-03-07T15:32:25.000-08:00
+      changes:
+      - path: .gitattributes
+        fullPath: W:\Coding\Unity\AnimalsTD\.gitattributes
+        projectPath: .gitattributes
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: .gitignore
+        fullPath: W:\Coding\Unity\AnimalsTD\.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\.gitignore
+        fullPath: W:\Coding\Unity\AnimalsTD\Assets\.gitignore
+        projectPath: Assets\.gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    statusAhead: 0
+    lastLogChangedEvent:
+      updatedTimeString: 2024-03-07T15:32:34.737-08:00
+      cacheType: 3
+    lastTrackingStatusChangedEvent:
+      updatedTimeString: 2024-03-07T15:32:25.825-08:00
+      cacheType: 5
+    historyControl:
+      scroll: {x: 0, y: 0}
+      entries:
+      - commitID: 38dd5d0b11a6b86efce2e5700686585c1a927f99
+        mergeA: 
+        mergeB: 
+        authorName: truong, thomas
+        authorEmail: truongthomasq@gmail.com
+        commitEmail: truongthomasq@gmail.com
+        commitName: truong, thomas
+        summary: Initial commit
+        description: 
+        timeString: 2024-03-07T15:32:25.000-08:00
+        commitTimeString: 2024-03-07T15:32:25.000-08:00
+        changes:
+        - path: .gitattributes
+          fullPath: W:\Coding\Unity\AnimalsTD\.gitattributes
+          projectPath: .gitattributes
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: .gitignore
+          fullPath: W:\Coding\Unity\AnimalsTD\.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\.gitignore
+          fullPath: W:\Coding\Unity\AnimalsTD\Assets\.gitignore
+          projectPath: Assets\.gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      statusAhead: 0
+      selectedIndex: -1
+    selectedEntry:
+      commitID: 
+      mergeA: 
+      mergeB: 
+      authorName: 
+      authorEmail: 
+      commitEmail: 
+      commitName: 
+      summary: 
+      description: 
+      timeString: 0001-01-01T00:00:00.000+00:00
+      commitTimeString: 0001-01-01T00:00:00.000+00:00
+      changes: []
+    treeChanges:
+      assets:
+        keys: []
+        values: []
+      folders:
+        keys: []
+        values: []
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: 
+      pathSeparator: /
+      displayRootNode: 0
+      isSelectable: 1
+      isCheckable: 0
+      isUsingGlobalSelection: 0
+      nodes: []
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       selectedNode:
         path: 
         label: 
@@ -2012,8 +2503,13 @@ MonoBehaviour:
     detailsScroll: {x: 0, y: 0}
   settingsView:
     gitPathView:
+<<<<<<< HEAD
       gitPath: C:\Users\darre\AppData\Local\GitForUnity\git\cmd\git.exe
       gitLfsPath: C:\Users\darre\AppData\Local\GitForUnity\git\mingw64\libexec\git-core\git-lfs.exe
+=======
+      gitPath: C:\Users\xthom\AppData\Local\GitForUnity\git\cmd\git.exe
+      gitLfsPath: C:\Users\xthom\AppData\Local\GitForUnity\git\mingw64\libexec\git-core\git-lfs.exe
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       errorMessage: 
       resetToBundled: 0
       resetToSystem: 0
@@ -2021,11 +2517,16 @@ MonoBehaviour:
       installSettingsHidden: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
+<<<<<<< HEAD
       updatedTimeString: 2024-03-16T14:24:51.594-07:00
+=======
+      updatedTimeString: 2024-03-07T15:41:11.171-08:00
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       cacheType: 1
     newRepositoryRemoteUrl: https://github.com/ThomasQTruong/AnimalsTD
     repositoryRemoteName: origin
     repositoryRemoteUrl: https://github.com/ThomasQTruong/AnimalsTD
+<<<<<<< HEAD
     scroll: {x: 0, y: 0}
     userSettingsView:
       gitName: Darren Alain Pagdonsolan Manalo
@@ -2035,6 +2536,17 @@ MonoBehaviour:
       needsSaving: 0
       lastCheckUserChangedEvent:
         updatedTimeString: 2024-03-16T14:25:55.725-07:00
+=======
+    scroll: {x: 0, y: 60}
+    userSettingsView:
+      gitName: truong, thomas
+      gitEmail: truongthomasq@gmail.com
+      newGitName: truong, thomas
+      newGitEmail: truongthomasq@gmail.com
+      needsSaving: 0
+      lastCheckUserChangedEvent:
+        updatedTimeString: 0001-01-01T00:00:00.000+00:00
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
@@ -2043,10 +2555,17 @@ MonoBehaviour:
     uiSceneSettingsHidden: 0
     uiProjectSettingsHidden: 0
   locksView:
+<<<<<<< HEAD
     currentRemoteHasUpdate: 1
     currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
     keychainHasUpdate: 1
+=======
+    currentRemoteHasUpdate: 0
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
+    keychainHasUpdate: 0
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     locksControl:
       scroll: {x: 0, y: 0}
       gitLockEntries: []
@@ -2065,6 +2584,7 @@ MonoBehaviour:
             email: 
           lockedAtString: 
         gitFileStatus: 0
+<<<<<<< HEAD
         lockedAt: 1 Jan 0001, 00:00
     lastCurrentRemoteChangedEvent:
       updatedTimeString: 2024-03-16T14:24:51.594-07:00
@@ -2101,6 +2621,20 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
+=======
+        lockedAt: 
+    lastCurrentRemoteChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lastLocksChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lastStatusEntriesChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lockedFiles: []
+    gitStatusEntries: []
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -2115,8 +2649,13 @@ MonoBehaviour:
   currentBranch: master
   currentRemoteUrl: https://github.com/ThomasQTruong/AnimalsTD
   statusAhead: 0
+<<<<<<< HEAD
   statusBehind: 5
   hasItemsToCommit: 1
+=======
+  statusBehind: 0
+  hasItemsToCommit: 0
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
@@ -2127,6 +2666,7 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
+<<<<<<< HEAD
     updatedTimeString: 2024-03-16T14:24:51.594-07:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
@@ -2134,6 +2674,15 @@ MonoBehaviour:
     cacheType: 5
   lastStatusEntriesChangedEvent:
     updatedTimeString: 2024-03-16T14:26:38.851-07:00
+=======
+    updatedTimeString: 2024-03-08T03:57:19.408-08:00
+    cacheType: 1
+  lastTrackingStatusChangedEvent:
+    updatedTimeString: 2024-03-08T03:57:19.400-08:00
+    cacheType: 5
+  lastStatusEntriesChangedEvent:
+    updatedTimeString: 2024-03-08T03:57:14.827-08:00
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -2153,10 +2702,17 @@ MonoBehaviour:
     m_Tooltip: 
   repositoryProgressValue: 0
   repositoryProgressMessage: 
+<<<<<<< HEAD
   appManagerProgressValue: 0
   appManagerProgressMessage: 
   primaryConnectionUsername: 
 --- !u!114 &13
+=======
+  appManagerProgressValue: 1
+  appManagerProgressMessage: 
+  primaryConnectionUsername: 
+--- !u!114 &16
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2177,9 +2733,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 634
     width: 1464
     height: 365
+=======
+    y: 73
+    width: 271
+    height: 764
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2201,24 +2763,42 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Game
+=======
+    - Assets/Game/Assets
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
+<<<<<<< HEAD
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Game
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\CPP\CS 4700\GitClone\AnimalsTD
+=======
+  m_StartGridSize: 53
+  m_LastFolders:
+  - Assets/Game/Assets
+  m_LastFoldersGridSize: 53
+  m_LastProjectPath: W:\Coding\Unity\AnimalsTD
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 92630000
     m_LastClickedID: 25490
     m_ExpandedIDs: 000000008263000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 36730000
+    m_LastClickedID: 29494
+    m_ExpandedIDs: 000000002e26000058730000
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2246,7 +2826,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000082630000
+=======
+    m_ExpandedIDs: 
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2273,8 +2857,13 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
+=======
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300000000000012960000
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2290,7 +2879,11 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 6}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -2299,10 +2892,17 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
+<<<<<<< HEAD
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &14
+=======
+    m_GridSize: 53
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 189
+--- !u!114 &17
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2322,10 +2922,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 732
     y: 81
     width: 226
     height: 917
+=======
+    x: 2656
+    y: -732
+    width: 295
+    height: 651
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2349,7 +2956,11 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &15
+=======
+--- !u!114 &18
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2369,10 +2980,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 73
     width: 362
     height: 540
+=======
+    x: 1624
+    y: 73
+    width: 295
+    height: 254
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2388,7 +3006,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 18fbffff
+=======
+      m_ExpandedIDs: c231ffff0632ffff5033ffff0a3dffff543dffffba3effff7675fffffafaffffd47500009e760000
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2404,7 +3026,11 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 0}
+=======
+        m_ClientGUIView: {fileID: 2}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -2412,7 +3038,11 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
+<<<<<<< HEAD
 --- !u!114 &16
+=======
+--- !u!114 &19
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2432,10 +3062,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 363
     y: 73
     width: 1100
     height: 540
+=======
+    x: 272
+    y: 73
+    width: 1350
+    height: 764
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2450,8 +3087,13 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: -166, y: -26}
+=======
+      snapOffset: {x: -166, y: -26}
+      snapOffsetDelta: {x: 0, y: 0}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -2476,7 +3118,11 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
       snapOffset: {x: 0, y: 0}
+=======
+      snapOffset: {x: 0, y: 25}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -2502,9 +3148,15 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
+=======
+      snapOffset: {x: -62, y: -196}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 3
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       id: unity-transform-toolbar
       index: 0
       layout: 2
@@ -2757,6 +3409,22 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
+<<<<<<< HEAD
+=======
+    - dockPosition: 0
+      containerId: Floating
+      floating: 1
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 1050, y: 558}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: UnityEditor.SceneViewCameraOverlay
+      index: 0
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     m_OverlaysVisible: 1
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
@@ -2768,9 +3436,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
+=======
+    m_Target: {x: -1.1414235, y: -0.3822615, z: -4.4333544}
+    speed: 2
+    m_Value: {x: -1.1414235, y: -0.3822615, z: -4.4333544}
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2820,9 +3494,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: 6.7858486
+    speed: 2
+    m_Value: 6.7858486
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2847,6 +3527,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2946,6 +3627,9 @@ MonoBehaviour:
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &18
+=======
+--- !u!114 &20
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2965,10 +3649,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2249
     y: 726.5
     width: 920
     height: 250
+=======
+    x: 0
+    y: 858
+    width: 1623
+    height: 141
+>>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
