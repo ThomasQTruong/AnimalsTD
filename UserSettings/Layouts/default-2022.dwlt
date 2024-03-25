@@ -19,240 +19,12 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-<<<<<<< HEAD
-  m_Title: Git for Unity
-  m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
-=======
   m_Title: Scene
-  m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 300}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-<<<<<<< HEAD
-=======
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 296
-    height: 275
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 2}
-  - {fileID: 5}
-  m_Position:
-    serializedVersion: 2
-    x: 1624
-    y: 0
-    width: 296
-    height: 947
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 8096, y: 16192}
-  vertical: 1
-  controlID: 105
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-<<<<<<< HEAD
-  - {fileID: 9}
-=======
-  - {fileID: 11}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 1920
-    height: 947
-<<<<<<< HEAD
-  m_MinSize: {x: 503, y: 492}
-  m_MaxSize: {x: 18097, y: 14042}
-  vertical: 0
-  controlID: 104
---- !u!114 &3
-=======
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 104
---- !u!114 &5
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-<<<<<<< HEAD
-    x: 1465
-    y: 0
-    width: 455
-    height: 947
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 12}
-  m_Panes:
-  - {fileID: 14}
-  - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &4
-=======
-    x: 0
-    y: 275
-    width: 296
-    height: 672
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 17}
-  - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &6
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-  m_Name: 
-=======
-  m_Name: ProjectBrowser
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-<<<<<<< HEAD
-    width: 363
-    height: 561
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &5
-=======
-    width: 272
-    height: 785
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &7
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-  m_Name: ProjectBrowser
-=======
-  m_Name: ConsoleWindow
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-<<<<<<< HEAD
-    y: 561
-    width: 1465
-    height: 386
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
-  m_Panes:
-  - {fileID: 13}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &6
-=======
-    y: 785
-    width: 1624
-    height: 162
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
-  m_Panes:
-  - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &8
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,36 +37,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-<<<<<<< HEAD
-  - {fileID: 7}
-  - {fileID: 2}
-  - {fileID: 8}
-=======
-  - {fileID: 9}
+  - {fileID: 3}
+  - {fileID: 5}
   - {fileID: 4}
-  - {fileID: 10}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1920
     height: 997
-<<<<<<< HEAD
-  m_MinSize: {x: 875, y: 542}
-=======
-  m_MinSize: {x: 875, y: 300}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+  m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
-<<<<<<< HEAD
---- !u!114 &7
-=======
---- !u!114 &9
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -316,11 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
-<<<<<<< HEAD
---- !u!114 &8
-=======
---- !u!114 &10
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -341,11 +95,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-<<<<<<< HEAD
---- !u!114 &9
-=======
---- !u!114 &11
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -358,74 +108,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-<<<<<<< HEAD
-  - {fileID: 10}
-  - {fileID: 5}
-=======
-  - {fileID: 12}
-  - {fileID: 7}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-<<<<<<< HEAD
-    width: 1465
-    height: 947
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
-  vertical: 1
-  controlID: 38
---- !u!114 &10
-=======
-    width: 1624
-    height: 947
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 58
---- !u!114 &12
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-<<<<<<< HEAD
-  - {fileID: 4}
-  - {fileID: 11}
-=======
   - {fileID: 6}
-  - {fileID: 13}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1920
+    height: 947
+  m_MinSize: {x: 503, y: 271}
+  m_MaxSize: {x: 16192, y: 12117}
+  vertical: 0
+  controlID: 2210
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 1465
+    width: 1463
+    height: 947
+  m_MinSize: {x: 403, y: 271}
+  m_MaxSize: {x: 8096, y: 12117}
+  vertical: 1
+  controlID: 2322
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 9}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1463
     height: 561
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 39
---- !u!114 &11
-=======
-    width: 1624
-    height: 785
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 59
---- !u!114 &13
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+  controlID: 2323
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -435,43 +180,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
   m_Name: 
-=======
-  m_Name: SceneView
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 363
+    x: 0
     y: 0
-    width: 1102
+    width: 361
     height: 561
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 17}
+  - {fileID: 13}
   m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &12
-=======
-    x: 272
-    y: 0
-    width: 1352
-    height: 785
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
-  m_Panes:
-  - {fileID: 19}
-  - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &14
+  m_LastSelected: 0
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -479,98 +204,80 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneView
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
+  m_Children: []
+  m_Position:
     serializedVersion: 2
-    x: 1304
-    y: -1007
-    width: 1350
-    height: 875
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1920, y: 1080}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -960
-    m_HBaseRangeMax: 960
-    m_VBaseRangeMin: -540
-    m_VBaseRangeMax: 540
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 1350
-      height: 854
-    m_Scale: {x: 0.703125, y: 0.703125}
-    m_Translation: {x: 675, y: 427}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -960
-      y: -607.2889
-      width: 1920
-      height: 1214.5778
-    m_MinimalGUI: 1
-  m_defaultScale: 0.703125
-  m_LastWindowPixelSize: {x: 1350, y: 875}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &15
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+    x: 361
+    y: 0
+    width: 1102
+    height: 561
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 561
+    width: 1463
+    height: 386
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 16}
+  - {fileID: 17}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: Window
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1463
+    y: 0
+    width: 457
+    height: 947
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 18}
+  - {fileID: 12}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -590,17 +297,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1465
+    x: 1463
     y: 73
-    width: 454
+    width: 456
     height: 926
-=======
-    x: 1624
-    y: 348
-    width: 295
-    height: 651
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -622,17 +322,10 @@ MonoBehaviour:
   changeTab: 3
   activeTab: 3
   initProjectView:
-<<<<<<< HEAD
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
     lastCheckUserChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
-=======
-    hasCompletedInitialCheck: 1
-    isUserDataPresent: 1
-    lastCheckUserChangedEvent:
-      updatedTimeString: 2024-03-07T15:32:21.850-08:00
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       cacheType: 8
   branchesView:
     treeLocals:
@@ -696,10 +389,7 @@ MonoBehaviour:
       folders:
         keys:
         - Remote branches
-<<<<<<< HEAD
         - origin
-=======
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         values:
         - path: Remote branches
           label: Remote branches
@@ -711,7 +401,6 @@ MonoBehaviour:
           isActive: 0
           treeIsCheckable: 0
           checkState: 0
-<<<<<<< HEAD
         - path: origin
           label: origin
           level: 1
@@ -722,8 +411,6 @@ MonoBehaviour:
           isActive: 0
           treeIsCheckable: 0
           checkState: 0
-=======
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       checkedFileNodes:
         keys: []
         values: []
@@ -743,7 +430,6 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
-<<<<<<< HEAD
       - path: origin
         label: origin
         level: 1
@@ -764,8 +450,16 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
-=======
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+      - path: origin/master
+        label: master
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -783,11 +477,10 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-<<<<<<< HEAD
-      updatedTimeString: 2024-03-16T14:24:53.334-07:00
+      updatedTimeString: 2024-03-17T16:33:36.575-07:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2024-03-16T14:24:51.594-07:00
+      updatedTimeString: 2024-03-17T16:32:53.397-07:00
       cacheType: 1
     currentBranch:
       name: master
@@ -795,19 +488,6 @@ MonoBehaviour:
     currentRemote:
       name: origin
       url: https://github.com/ThomasQTruong/AnimalsTD
-=======
-      updatedTimeString: 2024-03-07T15:32:34.472-08:00
-      cacheType: 2
-    lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2024-03-07T15:32:34.474-08:00
-      cacheType: 1
-    currentBranch:
-      name: master
-      tracking: 
-    currentRemote:
-      name: origin
-      url: https://github.com/ThomasQTruong/Animals-Tower-Defense/tree/master
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       login: 
       user: 
       host: 
@@ -815,15 +495,12 @@ MonoBehaviour:
       token: 
     localBranches:
     - name: master
-<<<<<<< HEAD
       tracking: origin/master
     remoteBranches:
     - name: origin/HEAD
       tracking: '[None]'
-=======
-      tracking: 
-    remoteBranches: []
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+    - name: origin/master
+      tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 0
     currentStatusEntriesHasUpdate: 0
@@ -833,18 +510,28 @@ MonoBehaviour:
     currentBranch: master
     treeScroll: {x: 0, y: 0}
     treeChanges:
-<<<<<<< HEAD
       assets:
-        keys: []
-        values: []
-      folders:
         keys:
-        - .vscode
-        - UserSettings
-        - UserSettings\Layouts
+        - 00000000000000001000000000000000
+        - e456d24125af6be4f840782ae5ae90ce
+        - 1b9280c5c844cf044bac23e97d6aae89
+        - 1721ca0d47c11574da51ec94d703d97c
+        - def92c07e2883994c95356888a9143b0
+        - 565c6a9564fe87742a35529ae29b4e16
+        - 20cbce91f825f0d409e9ccf90a15783a
+        - 2848faef3833eb041be0af17ef74b755
+        - 47a07f78812d7db42ae96145b1c7eb34
+        - 90f7c7bb2227cc84c9ef9fc82c759c83
+        - 72755f5f4f65f2f41989c325da7fe67b
+        - 11896d9e120331f4ba46b27b1c30cfc0
+        - 11e2e41c71eacbe4e9a10c18c5a38866
+        - 329cc01eff48ca84db25ebb9aa2f8abf
+        - 3916880d5d5c26a42b8b83f3b1fa76d7
+        - ae5af8cd7b35d5e4da880d66355cbe48
+        - db145551812a02741972d7a69f84358d
         values:
-        - path: .vscode
-          label: .vscode
+        - path: Assets
+          label: Assets
           level: 0
           isFolder: 1
           isContainer: 0
@@ -852,7 +539,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -861,26 +548,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
+        - path: Assets\Game
+          label: Game
           level: 1
           isFolder: 1
           isContainer: 0
@@ -888,7 +557,470 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Images
+          label: Images
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Images\Enemies
+          label: Enemies
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Images\Enemies\TestMob1.PNG
+          label: TestMob1.PNG
+          level: 4
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Images\Enemies\TestMob1.PNG
+            fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Enemies\TestMob1.PNG
+            projectPath: Assets\Game\Images\Enemies\TestMob1.PNG
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Game\Images\Maps
+          label: Maps
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Images\Maps\TestMap1.png
+          label: TestMap1.png
+          level: 4
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Images\Maps\TestMap1.png
+            fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Maps\TestMap1.png
+            projectPath: Assets\Game\Images\Maps\TestMap1.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Game\Prefabs
+          label: Prefabs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Maps
+          label: Maps
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Maps\Map.prefab
+          label: Map.prefab
+          level: 4
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Prefabs\Maps\Map.prefab
+            fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Maps\Map.prefab
+            projectPath: Assets\Game\Prefabs\Maps\Map.prefab
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Game\Scripts
+          label: Scripts
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Animal.cs
+          label: Animal.cs
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Animal.cs
+            fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Animal.cs
+            projectPath: Assets\Game\Scripts\Animal.cs
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Game\Scripts\GameData.cs
+          label: GameData.cs
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\GameData.cs
+            fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\GameData.cs
+            projectPath: Assets\Game\Scripts\GameData.cs
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Game\Scripts\Track.cs
+          label: Track.cs
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Track.cs
+            fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Track.cs
+            projectPath: Assets\Game\Scripts\Track.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Main Menu
+          label: Main Menu
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes\Game.unity
+          label: Game.unity
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\Game.unity
+            fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Scenes\Game.unity
+            projectPath: Assets\Scenes\Game.unity
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+      folders:
+        keys:
+        - Assets
+        - Assets\Game
+        - Assets\Game\Images
+        - Assets\Game\Images\Enemies
+        - Assets\Game\Images\Maps
+        - Assets\Game\Prefabs
+        - Assets\Game\Prefabs\Maps
+        - Assets\Game\Scripts
+        - Assets\Main Menu
+        - Assets\Scenes
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game
+          label: Game
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Images
+          label: Images
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Images\Enemies
+          label: Enemies
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Images\Maps
+          label: Maps
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Prefabs
+          label: Prefabs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Maps
+          label: Maps
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts
+          label: Scripts
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Main Menu
+          label: Main Menu
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -925,8 +1057,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: .vscode
-        label: .vscode
+      - path: Assets
+        label: Assets
         level: 0
         isFolder: 1
         isContainer: 0
@@ -934,7 +1066,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -943,80 +1075,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: .vscode\extensions.json
-        label: extensions.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: .vscode\extensions.json
-          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\.vscode\extensions.json
-          projectPath: .vscode\extensions.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: .vscode\launch.json
-        label: launch.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: .vscode\launch.json
-          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\.vscode\launch.json
-          projectPath: .vscode\launch.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: .vscode\settings.json
-        label: settings.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: .vscode\settings.json
-          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\.vscode\settings.json
-          projectPath: .vscode\settings.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
+      - path: Assets\Game
+        label: Game
         level: 1
         isFolder: 1
         isContainer: 0
@@ -1024,7 +1084,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1033,8 +1093,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        label: default-2022.dwlt
+      - path: Assets\Game\Images.meta
+        label: Images.meta
         level: 2
         isFolder: 0
         isContainer: 0
@@ -1042,15 +1102,483 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
+          path: Assets\Game\Images.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images.meta
+          projectPath: Assets\Game\Images.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
+      - path: Assets\Game\Images
+        label: Images
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Images\Enemies.meta
+        label: Enemies.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Images\Enemies.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Enemies.meta
+          projectPath: Assets\Game\Images\Enemies.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Images\Enemies
+        label: Enemies
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Images\Enemies\TestMob1.PNG
+        label: TestMob1.PNG
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Images\Enemies\TestMob1.PNG
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Enemies\TestMob1.PNG
+          projectPath: Assets\Game\Images\Enemies\TestMob1.PNG
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Images\Enemies\TestMob1.PNG.meta
+        label: TestMob1.PNG.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Images\Enemies\TestMob1.PNG.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Enemies\TestMob1.PNG.meta
+          projectPath: Assets\Game\Images\Enemies\TestMob1.PNG.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Images\Maps.meta
+        label: Maps.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Images\Maps.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Maps.meta
+          projectPath: Assets\Game\Images\Maps.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Images\Maps
+        label: Maps
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Images\Maps\TestMap1.png
+        label: TestMap1.png
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Images\Maps\TestMap1.png
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Maps\TestMap1.png
+          projectPath: Assets\Game\Images\Maps\TestMap1.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Images\Maps\TestMap1.png.meta
+        label: TestMap1.png.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Images\Maps\TestMap1.png.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Maps\TestMap1.png.meta
+          projectPath: Assets\Game\Images\Maps\TestMap1.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Prefabs.meta
+        label: Prefabs.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs.meta
+          projectPath: Assets\Game\Prefabs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Prefabs
+        label: Prefabs
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Enemies.meta
+        label: Enemies.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Enemies.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Enemies.meta
+          projectPath: Assets\Game\Prefabs\Enemies.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Prefabs\Maps.meta
+        label: Maps.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Maps.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Maps.meta
+          projectPath: Assets\Game\Prefabs\Maps.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Prefabs\Maps
+        label: Maps
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Maps\Map.prefab
+        label: Map.prefab
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Maps\Map.prefab
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Maps\Map.prefab
+          projectPath: Assets\Game\Prefabs\Maps\Map.prefab
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Prefabs\Maps\Map.prefab.meta
+        label: Map.prefab.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Maps\Map.prefab.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Maps\Map.prefab.meta
+          projectPath: Assets\Game\Prefabs\Maps\Map.prefab.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Scripts
+        label: Scripts
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Animal.cs
+        label: Animal.cs
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Animal.cs
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Animal.cs
+          projectPath: Assets\Game\Scripts\Animal.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Scripts\Animal.cs.meta
+        label: Animal.cs.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Animal.cs.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Animal.cs.meta
+          projectPath: Assets\Game\Scripts\Animal.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Scripts\GameData.cs
+        label: GameData.cs
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\GameData.cs
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\GameData.cs
+          projectPath: Assets\Game\Scripts\GameData.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Scripts\GameData.cs.meta
+        label: GameData.cs.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\GameData.cs.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\GameData.cs.meta
+          projectPath: Assets\Game\Scripts\GameData.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Game\Scripts\Track.cs
+        label: Track.cs
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Track.cs
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Track.cs
+          projectPath: Assets\Game\Scripts\Track.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Main Menu
+        label: Main Menu
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Main Menu\Images.meta
+        label: Images.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Main Menu\Images.meta
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Main Menu\Images.meta
+          projectPath: Assets\Main Menu\Images.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Scenes
+        label: Scenes
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Scenes\Game.unity
+        label: Game.unity
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scenes\Game.unity
+          fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Scenes\Game.unity
+          projectPath: Assets\Scenes\Game.unity
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -1071,39 +1599,129 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: .vscode\extensions.json
-      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\.vscode\extensions.json
-      projectPath: .vscode\extensions.json
+    - path: Assets\Game\Images.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images.meta
+      projectPath: Assets\Game\Images.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: .vscode\launch.json
-      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\.vscode\launch.json
-      projectPath: .vscode\launch.json
+    - path: Assets\Game\Images\Enemies.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Enemies.meta
+      projectPath: Assets\Game\Images\Enemies.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: .vscode\settings.json
-      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\.vscode\settings.json
-      projectPath: .vscode\settings.json
+    - path: Assets\Game\Images\Enemies\TestMob1.PNG
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Enemies\TestMob1.PNG
+      projectPath: Assets\Game\Images\Enemies\TestMob1.PNG
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: UserSettings\Layouts\default-2022.dwlt
-      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\UserSettings\Layouts\default-2022.dwlt
-      projectPath: UserSettings\Layouts\default-2022.dwlt
+    - path: Assets\Game\Images\Enemies\TestMob1.PNG.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Enemies\TestMob1.PNG.meta
+      projectPath: Assets\Game\Images\Enemies\TestMob1.PNG.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    changedFilesText: 4 changed files
+    - path: Assets\Game\Images\Maps.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Maps.meta
+      projectPath: Assets\Game\Images\Maps.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Images\Maps\TestMap1.png
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Maps\TestMap1.png
+      projectPath: Assets\Game\Images\Maps\TestMap1.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Images\Maps\TestMap1.png.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Images\Maps\TestMap1.png.meta
+      projectPath: Assets\Game\Images\Maps\TestMap1.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Prefabs.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs.meta
+      projectPath: Assets\Game\Prefabs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Prefabs\Enemies.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Enemies.meta
+      projectPath: Assets\Game\Prefabs\Enemies.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Prefabs\Maps.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Maps.meta
+      projectPath: Assets\Game\Prefabs\Maps.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Prefabs\Maps\Map.prefab
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Maps\Map.prefab
+      projectPath: Assets\Game\Prefabs\Maps\Map.prefab
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Prefabs\Maps\Map.prefab.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Prefabs\Maps\Map.prefab.meta
+      projectPath: Assets\Game\Prefabs\Maps\Map.prefab.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Scripts\Animal.cs
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Animal.cs
+      projectPath: Assets\Game\Scripts\Animal.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Scripts\Animal.cs.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Animal.cs.meta
+      projectPath: Assets\Game\Scripts\Animal.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Scripts\GameData.cs
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\GameData.cs
+      projectPath: Assets\Game\Scripts\GameData.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Scripts\GameData.cs.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\GameData.cs.meta
+      projectPath: Assets\Game\Scripts\GameData.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Game\Scripts\Track.cs
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Track.cs
+      projectPath: Assets\Game\Scripts\Track.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Main Menu\Images.meta
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Main Menu\Images.meta
+      projectPath: Assets\Main Menu\Images.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Scenes\Game.unity
+      fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Scenes\Game.unity
+      projectPath: Assets\Scenes\Game.unity
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 19 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-03-16T14:24:51.594-07:00
+      updatedTimeString: 2024-03-17T17:35:51.176-07:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-03-16T14:26:38.851-07:00
+      updatedTimeString: 2024-03-17T17:35:44.720-07:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2024-03-16T14:26:38.849-07:00
+      updatedTimeString: 2024-03-17T17:33:29.135-07:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -1537,10 +2155,10 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2024-03-16T14:25:55.459-07:00
+      updatedTimeString: 2024-03-17T16:34:10.285-07:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2024-03-16T14:25:58.311-07:00
+      updatedTimeString: 2024-03-17T16:33:36.856-07:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
@@ -2239,37 +2857,12 @@ MonoBehaviour:
       - path: Assets\Game\Scripts
         label: Scripts
         level: 2
-=======
-      assets:
-        keys: []
-        values: []
-      folders:
-        keys: []
-        values: []
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: 
-      pathSeparator: \
-      displayRootNode: 0
-      isSelectable: 1
-      isCheckable: 1
-      isUsingGlobalSelection: 1
-      nodes:
-      - path: 
-        label: 
-        level: -1
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         isFolder: 1
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
-<<<<<<< HEAD
         treeIsCheckable: 0
-=======
-        treeIsCheckable: 1
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         checkState: 0
         isLocked: 0
         gitStatusEntry:
@@ -2279,7 +2872,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-<<<<<<< HEAD
       - path: Assets\Game\Scripts\Track.cs
         label: Track.cs
         level: 3
@@ -2301,12 +2893,6 @@ MonoBehaviour:
       - path: Assets\Game\Scripts\Track.cs.meta
         label: Track.cs.meta
         level: 4
-=======
-      selectedNode:
-        path: 
-        label: 
-        level: 0
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -2316,7 +2902,6 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-<<<<<<< HEAD
           path: Assets\Game\Scripts\Track.cs.meta
           fullPath: C:\CPP\CS 4700\GitClone\AnimalsTD\Assets\Game\Scripts\Track.cs.meta
           projectPath: Assets\Game\Scripts\Track.cs.meta
@@ -2335,15 +2920,12 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-=======
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
           path: 
           fullPath: 
           projectPath: 
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-<<<<<<< HEAD
       - path: Assets\Scenes\Game.unity
         label: Game.unity
         level: 2
@@ -2362,125 +2944,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 3
           workTreeStatus: 0
-=======
-    gitStatusEntries: []
-    changedFilesText: No changed files
-    lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-03-08T03:57:19.408-08:00
-      cacheType: 1
-    lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-03-08T03:57:14.827-08:00
-      cacheType: 6
-    lastLocksChangedEvent:
-      updatedTimeString: 2024-03-08T03:56:21.495-08:00
-      cacheType: 7
-  historyView:
-    currentLogHasUpdate: 0
-    currentTrackingStatusHasUpdate: 0
-    logEntries:
-    - commitID: 38dd5d0b11a6b86efce2e5700686585c1a927f99
-      mergeA: 
-      mergeB: 
-      authorName: truong, thomas
-      authorEmail: truongthomasq@gmail.com
-      commitEmail: truongthomasq@gmail.com
-      commitName: truong, thomas
-      summary: Initial commit
-      description: 
-      timeString: 2024-03-07T15:32:25.000-08:00
-      commitTimeString: 2024-03-07T15:32:25.000-08:00
-      changes:
-      - path: .gitattributes
-        fullPath: W:\Coding\Unity\AnimalsTD\.gitattributes
-        projectPath: .gitattributes
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: .gitignore
-        fullPath: W:\Coding\Unity\AnimalsTD\.gitignore
-        projectPath: .gitignore
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\.gitignore
-        fullPath: W:\Coding\Unity\AnimalsTD\Assets\.gitignore
-        projectPath: Assets\.gitignore
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-    statusAhead: 0
-    lastLogChangedEvent:
-      updatedTimeString: 2024-03-07T15:32:34.737-08:00
-      cacheType: 3
-    lastTrackingStatusChangedEvent:
-      updatedTimeString: 2024-03-07T15:32:25.825-08:00
-      cacheType: 5
-    historyControl:
-      scroll: {x: 0, y: 0}
-      entries:
-      - commitID: 38dd5d0b11a6b86efce2e5700686585c1a927f99
-        mergeA: 
-        mergeB: 
-        authorName: truong, thomas
-        authorEmail: truongthomasq@gmail.com
-        commitEmail: truongthomasq@gmail.com
-        commitName: truong, thomas
-        summary: Initial commit
-        description: 
-        timeString: 2024-03-07T15:32:25.000-08:00
-        commitTimeString: 2024-03-07T15:32:25.000-08:00
-        changes:
-        - path: .gitattributes
-          fullPath: W:\Coding\Unity\AnimalsTD\.gitattributes
-          projectPath: .gitattributes
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: .gitignore
-          fullPath: W:\Coding\Unity\AnimalsTD\.gitignore
-          projectPath: .gitignore
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\.gitignore
-          fullPath: W:\Coding\Unity\AnimalsTD\Assets\.gitignore
-          projectPath: Assets\.gitignore
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      statusAhead: 0
-      selectedIndex: -1
-    selectedEntry:
-      commitID: 
-      mergeA: 
-      mergeB: 
-      authorName: 
-      authorEmail: 
-      commitEmail: 
-      commitName: 
-      summary: 
-      description: 
-      timeString: 0001-01-01T00:00:00.000+00:00
-      commitTimeString: 0001-01-01T00:00:00.000+00:00
-      changes: []
-    treeChanges:
-      assets:
-        keys: []
-        values: []
-      folders:
-        keys: []
-        values: []
-      checkedFileNodes:
-        keys: []
-        values: []
-      title: 
-      pathSeparator: /
-      displayRootNode: 0
-      isSelectable: 1
-      isCheckable: 0
-      isUsingGlobalSelection: 0
-      nodes: []
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       selectedNode:
         path: 
         label: 
@@ -2503,13 +2966,8 @@ MonoBehaviour:
     detailsScroll: {x: 0, y: 0}
   settingsView:
     gitPathView:
-<<<<<<< HEAD
       gitPath: C:\Users\darre\AppData\Local\GitForUnity\git\cmd\git.exe
       gitLfsPath: C:\Users\darre\AppData\Local\GitForUnity\git\mingw64\libexec\git-core\git-lfs.exe
-=======
-      gitPath: C:\Users\xthom\AppData\Local\GitForUnity\git\cmd\git.exe
-      gitLfsPath: C:\Users\xthom\AppData\Local\GitForUnity\git\mingw64\libexec\git-core\git-lfs.exe
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       errorMessage: 
       resetToBundled: 0
       resetToSystem: 0
@@ -2517,16 +2975,11 @@ MonoBehaviour:
       installSettingsHidden: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-<<<<<<< HEAD
-      updatedTimeString: 2024-03-16T14:24:51.594-07:00
-=======
-      updatedTimeString: 2024-03-07T15:41:11.171-08:00
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+      updatedTimeString: 2024-03-17T16:32:53.397-07:00
       cacheType: 1
     newRepositoryRemoteUrl: https://github.com/ThomasQTruong/AnimalsTD
     repositoryRemoteName: origin
     repositoryRemoteUrl: https://github.com/ThomasQTruong/AnimalsTD
-<<<<<<< HEAD
     scroll: {x: 0, y: 0}
     userSettingsView:
       gitName: Darren Alain Pagdonsolan Manalo
@@ -2535,18 +2988,7 @@ MonoBehaviour:
       newGitEmail: darrenapm1016@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2024-03-16T14:25:55.725-07:00
-=======
-    scroll: {x: 0, y: 60}
-    userSettingsView:
-      gitName: truong, thomas
-      gitEmail: truongthomasq@gmail.com
-      newGitName: truong, thomas
-      newGitEmail: truongthomasq@gmail.com
-      needsSaving: 0
-      lastCheckUserChangedEvent:
-        updatedTimeString: 0001-01-01T00:00:00.000+00:00
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+        updatedTimeString: 2024-03-17T16:34:17.026-07:00
         cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
@@ -2555,17 +2997,10 @@ MonoBehaviour:
     uiSceneSettingsHidden: 0
     uiProjectSettingsHidden: 0
   locksView:
-<<<<<<< HEAD
     currentRemoteHasUpdate: 1
     currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
     keychainHasUpdate: 1
-=======
-    currentRemoteHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
-    keychainHasUpdate: 0
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     locksControl:
       scroll: {x: 0, y: 0}
       gitLockEntries: []
@@ -2584,7 +3019,6 @@ MonoBehaviour:
             email: 
           lockedAtString: 
         gitFileStatus: 0
-<<<<<<< HEAD
         lockedAt: 1 Jan 0001, 00:00
     lastCurrentRemoteChangedEvent:
       updatedTimeString: 2024-03-16T14:24:51.594-07:00
@@ -2621,20 +3055,6 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-=======
-        lockedAt: 
-    lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
-    lastLocksChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
-    lastStatusEntriesChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
-    lockedFiles: []
-    gitStatusEntries: []
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -2649,13 +3069,8 @@ MonoBehaviour:
   currentBranch: master
   currentRemoteUrl: https://github.com/ThomasQTruong/AnimalsTD
   statusAhead: 0
-<<<<<<< HEAD
-  statusBehind: 5
-  hasItemsToCommit: 1
-=======
   statusBehind: 0
-  hasItemsToCommit: 0
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
@@ -2666,23 +3081,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-<<<<<<< HEAD
-    updatedTimeString: 2024-03-16T14:24:51.594-07:00
+    updatedTimeString: 2024-03-17T17:35:51.176-07:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-03-16T14:26:38.861-07:00
+    updatedTimeString: 2024-03-17T17:35:51.710-07:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-03-16T14:26:38.851-07:00
-=======
-    updatedTimeString: 2024-03-08T03:57:19.408-08:00
-    cacheType: 1
-  lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-03-08T03:57:19.400-08:00
-    cacheType: 5
-  lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-03-08T03:57:14.827-08:00
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+    updatedTimeString: 2024-03-17T17:35:44.720-07:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -2702,265 +3107,10 @@ MonoBehaviour:
     m_Tooltip: 
   repositoryProgressValue: 0
   repositoryProgressMessage: 
-<<<<<<< HEAD
-  appManagerProgressValue: 0
-  appManagerProgressMessage: 
-  primaryConnectionUsername: 
---- !u!114 &13
-=======
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
---- !u!114 &16
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_TitleContent:
-    m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-<<<<<<< HEAD
-    y: 634
-    width: 1464
-    height: 365
-=======
-    y: 73
-    width: 271
-    height: 764
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_ReferencingInstanceIDs: 
-    m_SceneHandles: 
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-<<<<<<< HEAD
-    - Assets/Game
-=======
-    - Assets/Game/Assets
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-    m_Globs: []
-    m_OriginalText: 
-    m_ImportLogFlags: 0
-    m_FilterByTypeIntersection: 0
-  m_ViewMode: 1
-<<<<<<< HEAD
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Game
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\CPP\CS 4700\GitClone\AnimalsTD
-=======
-  m_StartGridSize: 53
-  m_LastFolders:
-  - Assets/Game/Assets
-  m_LastFoldersGridSize: 53
-  m_LastProjectPath: W:\Coding\Unity\AnimalsTD
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-    m_SelectedIDs: 92630000
-    m_LastClickedID: 25490
-    m_ExpandedIDs: 000000008263000000ca9a3bffffff7f
-=======
-    m_SelectedIDs: 36730000
-    m_LastClickedID: 29494
-    m_ExpandedIDs: 000000002e26000058730000
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 0000000082630000
-=======
-    m_ExpandedIDs: 
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-<<<<<<< HEAD
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000
-=======
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300000000000012960000
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 0}
-=======
-      m_ClientGUIView: {fileID: 6}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-<<<<<<< HEAD
-    m_GridSize: 64
-  m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 207
---- !u!114 &14
-=======
-    m_GridSize: 53
-  m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 189
---- !u!114 &17
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-<<<<<<< HEAD
-    x: 732
-    y: 81
-    width: 226
-    height: 917
-=======
-    x: 2656
-    y: -732
-    width: 295
-    height: 651
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_PreviewResizer:
-    m_CachedPref: 160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
-  m_GlobalObjectId: 
-  m_InspectorMode: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewWindow: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &15
-=======
---- !u!114 &18
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2980,17 +3130,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
     y: 73
-    width: 362
+    width: 360
     height: 540
-=======
-    x: 1624
-    y: 73
-    width: 295
-    height: 254
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -3006,11 +3149,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-<<<<<<< HEAD
-      m_ExpandedIDs: 18fbffff
-=======
-      m_ExpandedIDs: c231ffff0632ffff5033ffff0a3dffff543dffffba3effff7675fffffafaffffd47500009e760000
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+      m_ExpandedIDs: a8deffff3ce9ffff80e9ffffc0e9ffff04eaffff4eeaffff18fbffff686500009a650000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3026,11 +3165,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-<<<<<<< HEAD
-        m_ClientGUIView: {fileID: 0}
-=======
-        m_ClientGUIView: {fileID: 2}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -3038,11 +3173,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
-<<<<<<< HEAD
---- !u!114 &16
-=======
---- !u!114 &19
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3062,17 +3193,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 363
+    x: 361
     y: 73
     width: 1100
     height: 540
-=======
-    x: 272
-    y: 73
-    width: 1350
-    height: 764
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -3087,13 +3211,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-<<<<<<< HEAD
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: -166, y: -26}
-=======
-      snapOffset: {x: -166, y: -26}
-      snapOffsetDelta: {x: 0, y: 0}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -3118,11 +3237,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-<<<<<<< HEAD
       snapOffset: {x: 0, y: 0}
-=======
-      snapOffset: {x: 0, y: 25}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -3148,15 +3263,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-<<<<<<< HEAD
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
-=======
-      snapOffset: {x: -62, y: -196}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
       id: unity-transform-toolbar
       index: 0
       layout: 2
@@ -3409,22 +3518,19 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
-<<<<<<< HEAD
-=======
-    - dockPosition: 0
-      containerId: Floating
-      floating: 1
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 1050, y: 558}
+      snapOffset: {x: 48, y: 48}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
-      index: 0
+      index: 11
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
     m_OverlaysVisible: 1
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
@@ -3436,15 +3542,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0.59402215, y: 0.25226712, z: -4.4669495}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
-=======
-    m_Target: {x: -1.1414235, y: -0.3822615, z: -4.4333544}
-    speed: 2
-    m_Value: {x: -1.1414235, y: -0.3822615, z: -4.4333544}
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+    m_Value: {x: 0.59402215, y: 0.25226712, z: -4.4669495}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -3494,15 +3594,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
     m_Target: 10
     speed: 2
     m_Value: 10
-=======
-    m_Target: 6.7858486
-    speed: 2
-    m_Value: 6.7858486
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -3527,8 +3621,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
-<<<<<<< HEAD
---- !u!114 &17
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3548,10 +3641,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
+    x: 363
+    y: 73
+    width: 1100
+    height: 540
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -3568,10 +3661,10 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1532, y: 769}
+  m_TargetSize: {x: 1100, y: 519}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
+  m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
@@ -3583,10 +3676,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -766
-    m_HBaseRangeMax: 766
-    m_VBaseRangeMin: -384.5
-    m_VBaseRangeMax: 384.5
+    m_HBaseRangeMin: -550
+    m_HBaseRangeMax: 550
+    m_VBaseRangeMin: -259.5
+    m_VBaseRangeMax: 259.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -3595,7 +3688,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -3604,32 +3697,175 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1532
-      height: 769
+      width: 1100
+      height: 519
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 766, y: 384.5}
+    m_Translation: {x: 550, y: 259.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -766
-      y: -384.5
-      width: 1532
-      height: 769
+      x: -550
+      y: -259.5
+      width: 1100
+      height: 519
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1532, y: 790}
+  m_LastWindowPixelSize: {x: 1100, y: 540}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
-=======
---- !u!114 &20
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1
+    y: 637
+    width: 729
+    height: 361
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Game/Scripts
+    m_Globs: []
+    m_OriginalText: 
+    m_ImportLogFlags: 0
+    m_FilterByTypeIntersection: 0
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Game/Scripts
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\CPP\CS 4700\GitClone\AnimalsTD
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ce630000
+    m_LastClickedID: 25550
+    m_ExpandedIDs: 000000008a6300009a6300009c63000000ca9a3bffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 000000008a6300009a6300009c63000000ca9a3bffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: da660000
+    m_LastClickedInstanceID: 26330
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000fe630000026400003e660000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 10}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 64
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 207
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3649,17 +3885,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 2249
-    y: 726.5
-    width: 920
-    height: 250
-=======
     x: 0
-    y: 858
-    width: 1623
-    height: 141
->>>>>>> 8e707f3e0cbd84a577ec3052d82e152ca29639c7
+    y: 634
+    width: 1462
+    height: 365
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -3670,3 +3899,50 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1692
+    y: 73
+    width: 227
+    height: 926
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: 26330
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
