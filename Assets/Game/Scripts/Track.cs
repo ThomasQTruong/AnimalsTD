@@ -6,13 +6,6 @@ public class Track : MonoBehaviour
 {
   public Transform[] waypoints;  // Depicts the pathing of the animals.
 
-  public float getCumulativeDist(int index, Vector2 pos){ //distance from waypoints + position of tower
-    float distance = Vector2.Distance(pos, waypoints[index].position);
-    for (int i = index; i < waypoints.Length - 1; i++){
-      distance += Vector2.Distance(waypoints[i].position, waypoints[i+1].position);
-    }
-    return distance;
-  }
 
   /**
    * Draw circular overlay for waypoints and connection lines toward waypoints.

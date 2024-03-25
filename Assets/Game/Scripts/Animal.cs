@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour {
   public float speed = 3.0f;  // How fast the animal is.
-
-  public Vector2 velocity; //Connects to Tower math
   public int damage = 1;      // Amount of damage done when animal gets through.
   public int health = 1;      // How tanky the animal is.
   public int value;           // Amount of money to give when dead.
@@ -14,7 +12,7 @@ public class Animal : MonoBehaviour {
 
   private void Update() {
     Vector2 nextPosition = getNextPosition();
-    velocity = ((Vector2)transform.position * GameData.instance.track.getWaypointPosition(_waypointIndex)) * speed;
+
     // Readjust rotation of the Sprite.
     Vector2 direction = (Vector2)gameObject.transform.position - nextPosition;
     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -39,12 +37,6 @@ public class Animal : MonoBehaviour {
     }
   }
 
-/**
-  * gets remaining distance from animal to endpoint
-  */
-  public float GetRemainingDistance(){
-    return GameData.instance.track.getCumulativeDist(_waypointIndex, transform.position);
-  }
 
   /**
    * Calculates the next position to go to.
