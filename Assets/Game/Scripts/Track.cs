@@ -27,18 +27,29 @@ public class Track : MonoBehaviour
 
   /**
    * Retrieve a waypoint's position.
+   * 
+   * @param index - the waypoint to get.
    */
   public Vector2 getWaypointPosition(int index) {
     return waypoints[index].position;
   }
 
 
+  /**
+   * Gets the distance away from the end at the current position.
+   * 
+   * @param index - the current waypoint's index.
+   * @param pos - the current position of the object.
+   */
   public float getCumulativeDist(int index, Vector2 pos) {
-    // distance from waypoints + position of tower
+    // Current distance away from the target waypoint.
     float distance = Vector2.Distance(pos, waypoints[index].position);
-    for (int i = index; i < waypoints.Length - 1; i++) {
+
+    // Sum the distance to every other waypoint.
+    for (int i = index; i < waypoints.Length - 1; ++i) {
       distance += Vector2.Distance(waypoints[i].position, waypoints[i + 1].position);
     }
+
     return distance;
   }
 }

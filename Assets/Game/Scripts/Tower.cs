@@ -20,11 +20,13 @@ public class Tower : MonoBehaviour {
 
 
   private void Update() {
+    // Spam shoot prevention.
     if (Time.time > nextFire) {
-      Animal a = getClosest();
-      if (a != null) {
+      Animal animal = getClosest();
+      // Animal still exists.
+      if (animal != null) {
         nextFire = Time.time + fireRate;
-        shoot(a);
+        shoot(animal);
       }
     }
   }
@@ -74,12 +76,13 @@ public class Tower : MonoBehaviour {
 
 
   /**
-   * shooting function
+   * Shoots a projectile towards animal.
+   * 
+   * @param target - the animal to shoot at.
    */
-  private void shoot(Animal a)
-  {
-    float dist = Vector2.Distance(transform.position, a.transform.position);
-    Vector2 prediction = (Vector2)a.transform.position - (a.velocity * dist / speed) * 2;
+  private void shoot(Animal target) {
+    float dist = Vector2.Distance(transform.position, target.transform.position);
+    Vector2 prediction = (Vector2)target.transform.position - (target.velocity * dist / speed) * 2;
     transform.up = prediction - (Vector2)transform.position;
     Projectile p = Instantiate(projectile, transform.position, transform.rotation);
     p.parent = this;

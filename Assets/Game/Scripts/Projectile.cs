@@ -7,13 +7,17 @@ public class Projectile : MonoBehaviour {
   public float lifetime = 5.0f;  // The amount of seconds it is alive for.
 
 
+  /**
+   * Kill projectile when its lifetime expires.
+   */
   private void Start() {
-    // Kill projectile when its lifetime expires.
     Destroy(gameObject, lifetime);
   }
 
 
-  // Gives motion to the projectile.
+  /**
+   * Gives motion to the projectile.
+   */
   private void Update() {
     transform.position = transform.up * parent.speed * Time.deltaTime;
   }
