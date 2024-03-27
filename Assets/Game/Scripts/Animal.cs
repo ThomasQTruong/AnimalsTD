@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Animal : MonoBehaviour {
-  public float speed = 3.0f;   // How fast the animal is.
-  public Vector2 velocity;     //Connects to Tower math
-  public int damage = 1;       // Amount of damage done when animal gets through.
-  public int health = 1;       // How tanky the animal is.
-  public int value;            // Amount of money to give when dead.
+  public float speed = 3.0f;      // How fast the animal is.
+  public Vector2 velocity;        // The current velocity of the animal.
+  public int damage = 1;          // Amount of damage done when animal gets through.
+  public int health = 1;          // How tanky the animal is.
+  public int value;               // Amount of money to give when dead.
+  public DamageType resistances;  // The type of damage the animal is resistant against.
+
   private int _waypointIndex;  // Index of the waypoint it is going towards.
 
 
@@ -63,5 +65,21 @@ public class Animal : MonoBehaviour {
     Vector2 direction = nextPosition - (Vector2)transform.position;
 
     return (Vector2)transform.position + speed * Time.deltaTime * direction.normalized;
+  }
+
+
+  /**
+   * Makes the animal take a certain amount of damage.
+   * 
+   * @param damage - the amount of damage to take.
+   * @param damageTypes - the type(s) of the damage.
+   */
+  public void TakeDamage(int damage, DamageType[] damageTypes) {
+    health -= damage;
+    
+    // Animal died.
+    if (health <= 0) {
+      Destroy(gameObject);
+    }
   }
 }

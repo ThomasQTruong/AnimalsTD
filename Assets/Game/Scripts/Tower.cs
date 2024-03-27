@@ -11,6 +11,7 @@ public class Tower : MonoBehaviour {
   public float speed = 11;
   public int pierce = 1;
   public bool AOE = false;
+  public DamageType[] damageTypes;
 
   public int cost = 20;
   public GameObject radiusDisplay;

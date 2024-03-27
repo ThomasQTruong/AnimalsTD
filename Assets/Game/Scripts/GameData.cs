@@ -2,6 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// The types of damage in the game.
+public enum DamageType
+{
+  Standard,
+  Explosive,
+  Fire,
+  Ice
+}
+
+
 public class GameData : MonoBehaviour
 {
   public static GameData instance;  // Limits to one instance.
