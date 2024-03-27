@@ -97,7 +97,7 @@ public class Tower : MonoBehaviour {
    */
   private void Shoot(Animal target) {
     float dist = Vector2.Distance(transform.position, target.transform.position);
-    Vector2 prediction = (Vector2)target.transform.position - (target.velocity * dist / speed) * 2;
+    Vector2 prediction = (Vector2)target.transform.position - (target.velocity * dist / speed * 2);
     transform.up = prediction - (Vector2)transform.position;
     Projectile p = Instantiate(projectile, transform.position, transform.rotation);
     p.parent = this;

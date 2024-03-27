@@ -18,7 +18,7 @@ public class Animal : MonoBehaviour {
    */
   private void Update() {
     Vector2 nextPosition = GetNextPosition();
-    velocity = (transform.position * GameData.instance.track.GetWaypointPosition(_waypointIndex)).normalized * speed;
+    velocity = (transform.position * GameData.instance.track.GetWaypointPosition(_waypointIndex) * speed).normalized;
 
     // Readjust rotation of the Sprite.
     Vector2 direction = (Vector2)gameObject.transform.position - nextPosition;
@@ -41,6 +41,7 @@ public class Animal : MonoBehaviour {
       if (_waypointIndex >= GameData.instance.track.waypoints.Length) {
         Destroy(gameObject);
         GameData.instance.health -= damage;
+        --GameData.instance.animalsLeft;
       }
     }
   }
@@ -75,6 +76,7 @@ public class Animal : MonoBehaviour {
   private void Die() {
     Destroy(gameObject);
     GameData.instance.money += value;
+    --GameData.instance.animalsLeft;
   }
 
 
