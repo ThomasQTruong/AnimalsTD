@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class GameData : MonoBehaviour
 {
-  public static GameData instance;
-  public GameObject map;
-  public Track track;
+  public static GameData instance;  // Limits to one instance.
+  public GameObject map;            // Current map of the game.
+  public Track track;               // Track of the current map.
 
 
   /**
-   * Only allows one instance.
+   * Initialize the instance.
    */
   public void Awake() {
     instance = this;

@@ -22,7 +22,7 @@ public class Tower : MonoBehaviour {
   private void Update() {
     // Spam shoot prevention.
     if (Time.time > nextFire) {
-      Animal animal = GetClosest();
+      Animal animal = GetClosestToEnd();
       // Animal still exists.
       if (animal != null) {
         nextFire = Time.time + fireRate;
@@ -33,22 +33,30 @@ public class Tower : MonoBehaviour {
 
 
   /**
-   * helper function that returns all animals in range of tower
+   * Retrieves all the animals in the range of the tower.
+   * 
+   * @return Animal[] - the list of animals in range.
    */
-  private Animal[] GetAllInRange()
-  {
-    Collider2D[] col = Physics2D.OverlapCircleAll(transform.position, radius);
-    Animal[] animals = new Animal[col.Length];
-    int i = 0;
-    if (col.Length == 0)
+  private Animal[] GetAllAnimalsInRange() {
+    // Gets all overlapping Collider2Ds.
+    Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
+    Animal[] animals = new Animal[colliders.Length];
+
+    // No animals near.
+    if (colliders.Length == 0) {
       return animals;
-    foreach (var c in col)
-    {
-      Animal a = c.gameObject.GetComponent<Animal>();
-      if (a != null)
-        animals[i] = a;
-      i++;
     }
+
+    // For every collider.
+    for (int i = 0; i < colliders.Length; ++i) {
+      // Get the animal that has the collider.
+      Animal animal = colliders[i].gameObject.GetComponent<Animal>();
+      // Animal exists, add to list.
+      if (animal != null) {
+        animals[i] = animal;
+      }
+    }
+
     return animals;
   }
 
@@ -56,21 +64,27 @@ public class Tower : MonoBehaviour {
   /**
    * uses AllInRange to get the specific animal to shoot
    */
-  private Animal GetClosest()
-  {
-    Animal[] animals = GetAllInRange();
+  private Animal GetClosestToEnd() {
+    Animal[] animals = GetAllAnimalsInRange();
     Animal closest = null;
-    float distance = float.MaxValue;
-    foreach (Animal a in animals)
+    float closestDistance = float.MaxValue;
+
+    // For every animal in range.
+    foreach (Animal animal in animals)
     {
-      if (a == null) continue;
-      float d = a.GetRemainingDistance();
-      if (d < distance)
-      {
-        distance = d;
-        closest = a;
+      // Animal does not exist anymore.
+      if (animal == null) {
+        continue;
+      }
+
+      // Found animal that is closer, update variable.
+      float distance = animal.GetRemainingDistance();
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closest = animal;
       }
     }
+
     return closest;
   }
 
@@ -86,5 +100,14 @@ public class Tower : MonoBehaviour {
     transform.up = prediction - (Vector2)transform.position;
     Projectile p = Instantiate(projectile, transform.position, transform.rotation);
     p.parent = this;
+  }
+
+
+  /**
+   * Draws the radius of the tower.
+   */
+  private void OnDrawGizmosSelected() {
+    Gizmos.color = Color.red;
+    Gizmos.DrawWireSphere(transform.position, radius);
   }
 }

@@ -11,6 +11,9 @@ public class Animal : MonoBehaviour {
   private int _waypointIndex;  // Index of the waypoint it is going towards.
 
 
+  /**
+   * Gives motion to the animal and flips image based on X-direction of movement.
+   */
   private void Update() {
     Vector2 nextPosition = GetNextPosition();
     velocity = (transform.position * GameData.instance.track.GetWaypointPosition(_waypointIndex)) * speed;
