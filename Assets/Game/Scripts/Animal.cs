@@ -16,7 +16,7 @@ public class Animal : MonoBehaviour {
    */
   private void Update() {
     Vector2 nextPosition = GetNextPosition();
-    velocity = (transform.position * GameData.instance.track.GetWaypointPosition(_waypointIndex)) * speed;
+    velocity = (transform.position * GameData.instance.track.GetWaypointPosition(_waypointIndex)).normalized * speed;
 
     // Readjust rotation of the Sprite.
     Vector2 direction = (Vector2)gameObject.transform.position - nextPosition;

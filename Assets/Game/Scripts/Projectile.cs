@@ -19,6 +19,6 @@ public class Projectile : MonoBehaviour {
    * Gives motion to the projectile.
    */
   private void Update() {
-    transform.position = transform.up * parent.speed * Time.deltaTime;
+    transform.position += transform.up * parent.speed * Time.deltaTime;
   }
 }
