@@ -19,6 +19,11 @@ public class GameData : MonoBehaviour
   public GameObject map;            // Current map of the game.
   public Track track;               // Track of the current map.
 
+  // Player stats.
+  public int health = 100;
+  public int money = 1000;
+  public int currentRound = 0;
+
 
   /**
    * Initialize the instance.

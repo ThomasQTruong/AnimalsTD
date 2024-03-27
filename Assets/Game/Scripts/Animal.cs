@@ -37,9 +37,10 @@ public class Animal : MonoBehaviour {
     if (Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex)) < 0.002f) {
       ++_waypointIndex;
       
-      // Reached the end of the track..
+      // Reached the end of the track.
       if (_waypointIndex >= GameData.instance.track.waypoints.Length) {
         Destroy(gameObject);
+        GameData.instance.health -= damage;
       }
     }
   }
@@ -69,6 +70,15 @@ public class Animal : MonoBehaviour {
 
 
   /**
+   * Kills the animal by projectile.
+   */
+  private void Die() {
+    Destroy(gameObject);
+    GameData.instance.money += value;
+  }
+
+
+  /**
    * Makes the animal take a certain amount of damage.
    * 
    * @param damage - the amount of damage to take.
@@ -79,7 +89,7 @@ public class Animal : MonoBehaviour {
     
     // Animal died.
     if (health <= 0) {
-      Destroy(gameObject);
+      Die();
     }
   }
 }
