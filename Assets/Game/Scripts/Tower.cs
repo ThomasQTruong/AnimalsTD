@@ -22,11 +22,11 @@ public class Tower : MonoBehaviour {
   private void Update() {
     // Spam shoot prevention.
     if (Time.time > nextFire) {
-      Animal animal = getClosest();
+      Animal animal = GetClosest();
       // Animal still exists.
       if (animal != null) {
         nextFire = Time.time + fireRate;
-        shoot(animal);
+        Shoot(animal);
       }
     }
   }
@@ -35,7 +35,7 @@ public class Tower : MonoBehaviour {
   /**
    * helper function that returns all animals in range of tower
    */
-  private Animal[] getAllInRange()
+  private Animal[] GetAllInRange()
   {
     Collider2D[] col = Physics2D.OverlapCircleAll(transform.position, radius);
     Animal[] animals = new Animal[col.Length];
@@ -56,9 +56,9 @@ public class Tower : MonoBehaviour {
   /**
    * uses AllInRange to get the specific animal to shoot
    */
-  private Animal getClosest()
+  private Animal GetClosest()
   {
-    Animal[] animals = getAllInRange();
+    Animal[] animals = GetAllInRange();
     Animal closest = null;
     float distance = float.MaxValue;
     foreach (Animal a in animals)
@@ -80,7 +80,7 @@ public class Tower : MonoBehaviour {
    * 
    * @param target - the animal to shoot at.
    */
-  private void shoot(Animal target) {
+  private void Shoot(Animal target) {
     float dist = Vector2.Distance(transform.position, target.transform.position);
     Vector2 prediction = (Vector2)target.transform.position - (target.velocity * dist / speed) * 2;
     transform.up = prediction - (Vector2)transform.position;

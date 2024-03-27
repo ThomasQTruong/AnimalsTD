@@ -30,7 +30,7 @@ public class Track : MonoBehaviour
    * 
    * @param index - the waypoint to get.
    */
-  public Vector2 getWaypointPosition(int index) {
+  public Vector2 GetWaypointPosition(int index) {
     return waypoints[index].position;
   }
 
@@ -41,7 +41,7 @@ public class Track : MonoBehaviour
    * @param index - the current waypoint's index.
    * @param pos - the current position of the object.
    */
-  public float getCumulativeDist(int index, Vector2 pos) {
+  public float GetCumulativeDist(int index, Vector2 pos) {
     // Current distance away from the target waypoint.
     float distance = Vector2.Distance(pos, waypoints[index].position);
 

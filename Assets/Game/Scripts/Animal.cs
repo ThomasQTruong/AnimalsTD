@@ -12,8 +12,8 @@ public class Animal : MonoBehaviour {
 
 
   private void Update() {
-    Vector2 nextPosition = getNextPosition();
-    velocity = (transform.position * GameData.instance.track.getWaypointPosition(_waypointIndex)) * speed;
+    Vector2 nextPosition = GetNextPosition();
+    velocity = (transform.position * GameData.instance.track.GetWaypointPosition(_waypointIndex)) * speed;
 
     // Readjust rotation of the Sprite.
     Vector2 direction = (Vector2)gameObject.transform.position - nextPosition;
@@ -29,7 +29,7 @@ public class Animal : MonoBehaviour {
     transform.position = nextPosition;
 
     // Reached a waypoint, move to next waypoint.
-    if (Vector2.Distance(transform.position, GameData.instance.track.getWaypointPosition(_waypointIndex)) < 0.002f) {
+    if (Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex)) < 0.002f) {
       ++_waypointIndex;
       
       // Reached the end of the track..
@@ -41,10 +41,12 @@ public class Animal : MonoBehaviour {
 
 
   /**
-   * gets remaining distance from animal to endpoint
+   * Gets the distance away from the end.
+   * 
+   * @return float - the distance away from the end.
    */
   public float GetRemainingDistance() {
-    return GameData.instance.track.getCumulativeDist(_waypointIndex, transform.position);
+    return GameData.instance.track.GetCumulativeDist(_waypointIndex, transform.position);
   }
 
 
@@ -53,8 +55,8 @@ public class Animal : MonoBehaviour {
    *
    * @return Vector2 - the next position.
    */
-  private Vector2 getNextPosition() {
-    Vector2 nextPosition = GameData.instance.track.getWaypointPosition(_waypointIndex);
+  private Vector2 GetNextPosition() {
+    Vector2 nextPosition = GameData.instance.track.GetWaypointPosition(_waypointIndex);
     Vector2 direction = nextPosition - (Vector2)transform.position;
 
     return (Vector2)transform.position + speed * Time.deltaTime * direction.normalized;
