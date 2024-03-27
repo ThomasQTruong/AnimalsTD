@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour {
-  public ThornTower parent;
-  public float lifetime = 5f;
+  public Tower parent;           // The tower that throws this projectile.
+  public float lifetime = 5.0f;  // The amount of seconds it is alive for.
 
-  private void Start()
-  {
+
+  private void Start() {
+    // Kill projectile when its lifetime expires.
     Destroy(gameObject, lifetime);
   }
 
 
-  private void Update()
-  {
+  // Gives motion to the projectile.
+  private void Update() {
     transform.position = transform.up * parent.speed * Time.deltaTime;
   }
 }

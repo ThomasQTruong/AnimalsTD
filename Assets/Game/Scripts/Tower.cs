@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThornTower : MonoBehaviour
-{
-  public string label;
+public class Tower : MonoBehaviour {
+  public string name;
   public float fireRate = 1;
   public float radius = 1;
 
@@ -15,7 +14,7 @@ public class ThornTower : MonoBehaviour
 
   public int cost = 20;
   public GameObject radiusDisplay;
-  public Projectile thorn;
+  public Projectile projectile;
   public GameObject mesh;
   private float nextFire;
 
@@ -82,7 +81,7 @@ public class ThornTower : MonoBehaviour
     float dist = Vector2.Distance(transform.position, a.transform.position);
     Vector2 prediction = (Vector2)a.transform.position - (a.velocity * dist / speed) * 2;
     transform.up = prediction - (Vector2)transform.position;
-    Projectile p = Instantiate(thorn, transform.position, transform.rotation);
+    Projectile p = Instantiate(projectile, transform.position, transform.rotation);
     p.parent = this;
   }
 }
