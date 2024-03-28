@@ -12,6 +12,14 @@ public class Player : MonoBehaviour {
     cam = Camera.main;
   }
 
+  private void Update(){
+
+  }
+
+  private void selectTower(Tower t){
+    
+  }
+
 
   /**
    * Starts the placement process for the selected tower.
