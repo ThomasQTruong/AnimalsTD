@@ -5,6 +5,7 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager instance;
     public TMP_Text moneyText;
     public TMP_Text healthText;
     public TMP_Text roundText;
