@@ -19,6 +19,11 @@ public class Player : MonoBehaviour {
    * @param tower - the tower being placed.
    */
   public void StartPlacement(Tower tower) {
+    // Already placing! Ignore.
+    if (isPlacing) {
+      return;
+    }
+
     // Sets the buffer and switches boolean for placement.
     currentPlaceBuffer = tower;
     isPlacing = true;
@@ -44,22 +49,38 @@ public class Player : MonoBehaviour {
    * Placement process: while the user is currently trying to place a tower.
    */
   IEnumerator Place() {
-    while(isPlacing) {
+    // Create a visualization for the user to see while placing.
+    GameObject ghost = Instantiate(currentPlaceBuffer.mesh, Vector3.zero, Quaternion.identity);
+    GameObject radius = Instantiate(currentPlaceBuffer.radiusDisplay, Vector3.zero, Quaternion.identity);
+    radius.transform.localScale = new Vector2(currentPlaceBuffer.radius * 2, currentPlaceBuffer.radius * 2);
+
+    while (isPlacing) {
       Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
       mousePos.z = 0;
 
+      // Makes visualizations follow the mouse.
+      ghost.transform.position = mousePos;
+      radius.transform.position = mousePos;
+
       // Is a left click.
       if (Input.GetMouseButtonDown(0)) {
-        // Has enough money.
-        if (GameData.instance.money >= currentPlaceBuffer.price) {
-          // Place tower.
-          PlaceTower(mousePos);
+        // Toggle placement flag.
+        isPlacing = false;
 
-          // Reduces money and ends the placement process.
-          GameData.instance.money -= currentPlaceBuffer.price;
+        // Remove visualization after placing.
+        Destroy(ghost);
+        Destroy(radius);
+        
+        // Unable to afford tower, stop placement.
+        if (GameData.instance.money < currentPlaceBuffer.price) {
           currentPlaceBuffer = null;
-          isPlacing = false;
+          break;
         }
+
+        // Has money, place tower and remove money.
+        PlaceTower(mousePos);
+        GameData.instance.money -= currentPlaceBuffer.price;
+        currentPlaceBuffer = null;
       }
 
       yield return null;
