@@ -11,9 +11,9 @@ public class Tower : MonoBehaviour {
   public float speed = 11;
   public int pierce = 1;
   public bool AOE = false;
-  public DamageType[] damageTypes;
+  public DamageType[] damageTypes;  // The types of damage the tower does.
 
-  public int cost = 20;
+  public int price = 20;  // How much the tower costs.
   public GameObject radiusDisplay;
   public Projectile projectile;
   public GameObject mesh;
