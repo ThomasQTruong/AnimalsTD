@@ -276,7 +276,7 @@ MonoBehaviour:
   pierce: 1
   AOE: 0
   damageTypes: 
-  price: 20
+  price: 250
   radiusDisplay: {fileID: 6501745969920620487}
   projectile: {fileID: 2691079788069095535, guid: 5266f8fec25f1a04a9b25707e0576501, type: 3}
   mesh: {fileID: 5456539569036691567}

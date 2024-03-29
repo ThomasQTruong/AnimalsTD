@@ -144,6 +144,13 @@ public class Player : MonoBehaviour {
         PlaceTower(mousePos);
         GameData.instance.money -= currentPlaceBuffer.price;
         currentPlaceBuffer = null;
+      } else if (Input.GetMouseButtonDown(1)) {
+        // User right clicked (cancel).
+        isPlacing = false;
+        // Remove visualization after placing.
+        Destroy(ghost);
+        Destroy(radius);
+        currentPlaceBuffer = null;
       }
 
       yield return null;
