@@ -593,6 +593,30 @@ MonoBehaviour:
       spawnRate: 0.2
     spawnDelay: 0.3
     moneyGain: 250
+  - animals:
+    - animal: {fileID: 4200804728715674714, guid: 8293859b51ba81642bce51a2e0a53a1d, type: 3}
+      count: 30
+      spawnRate: 0.2
+    spawnDelay: 0.3
+    moneyGain: 250
+  - animals:
+    - animal: {fileID: 4200804728715674714, guid: 8293859b51ba81642bce51a2e0a53a1d, type: 3}
+      count: 50
+      spawnRate: 0.2
+    spawnDelay: 0.3
+    moneyGain: 250
+  - animals:
+    - animal: {fileID: 4200804728715674714, guid: 8293859b51ba81642bce51a2e0a53a1d, type: 3}
+      count: 75
+      spawnRate: 0.2
+    spawnDelay: 0.3
+    moneyGain: 250
+  - animals:
+    - animal: {fileID: 4200804728715674714, guid: 8293859b51ba81642bce51a2e0a53a1d, type: 3}
+      count: 100
+      spawnRate: 0.2
+    spawnDelay: 0.3
+    moneyGain: 250
   currentRound: 0
   animalsLeft: 0
 --- !u!4 &132762385
@@ -791,7 +815,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &271604874
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1422,7 +1446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000015025996}
+  m_AnchoredPosition: {x: 0, y: 0.0004094527}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &502486323
