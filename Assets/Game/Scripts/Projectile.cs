@@ -10,20 +10,22 @@ public class Projectile : MonoBehaviour {
   private int pierce;
 
 
-  /**
-   * Kill projectile when its lifetime expires.
-   */
   private void Start() {
+    // Kill projectile when its lifetime expires.
     Destroy(gameObject, lifetime);
     pierce = parent.pierce;
   }
 
+  private void Update() {
+    Motion();
+  }
+
 
   /**
-   * Gives motion to the projectile.
+   * The movement of the projectile.
    */
-  private void Update() {
-    transform.position += transform.up * parent.speed * Time.deltaTime;
+  private void Motion() {
+    transform.position += parent.speed * Time.deltaTime * transform.up;
   }
 
 

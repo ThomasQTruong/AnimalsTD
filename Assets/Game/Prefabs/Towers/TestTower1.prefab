@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7415146441118554562}
   - component: {fileID: 3120720246044949361}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8106394267812503360}
   - component: {fileID: 1887101474855519301}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,8 @@ GameObject:
   - component: {fileID: 7086095294809165707}
   - component: {fileID: 8789404990587723933}
   - component: {fileID: 2302905127869010657}
-  m_Layer: 0
+  - component: {fileID: -5463628423918905619}
+  m_Layer: 12
   m_Name: TestTower1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,3 +280,38 @@ MonoBehaviour:
   radiusDisplay: {fileID: 6501745969920620487}
   projectile: {fileID: 2691079788069095535, guid: 5266f8fec25f1a04a9b25707e0576501, type: 3}
   mesh: {fileID: 5456539569036691567}
+--- !u!58 &-5463628423918905619
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551930611947656299}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.23

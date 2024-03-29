@@ -12,11 +12,15 @@ public class Animal : MonoBehaviour {
 
   private int _waypointIndex;  // Index of the waypoint it is going towards.
 
+  private void Update() {
+    Move();
+  }
+
 
   /**
    * Gives motion to the animal and flips image based on X-direction of movement.
    */
-  private void Update() {
+  private void Move() {
     Vector2 nextPosition = GetNextPosition();
     velocity = (transform.position * GameData.instance.track.GetWaypointPosition(_waypointIndex) * speed).normalized;
 
@@ -26,7 +30,8 @@ public class Animal : MonoBehaviour {
     transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     if (direction.x < 0) {  // Going right, flip Y to make it upright.
       GetComponent<SpriteRenderer>().flipY = true;
-    } else {  // Going left, unflip.
+    }
+    else {  // Going left, unflip.
       GetComponent<SpriteRenderer>().flipY = false;
     }
 
@@ -36,7 +41,7 @@ public class Animal : MonoBehaviour {
     // Reached a waypoint, move to next waypoint.
     if (Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex)) < 0.002f) {
       ++_waypointIndex;
-      
+
       // Reached the end of the track.
       if (_waypointIndex >= GameData.instance.track.waypoints.Length) {
         Destroy(gameObject);

@@ -21,6 +21,14 @@ public class Tower : MonoBehaviour {
 
 
   private void Update() {
+    ShootAtAnimalsInRange();
+  }
+
+
+  /**
+   * Shoots at the animals if they are in range.
+   */
+  private void ShootAtAnimalsInRange() {
     // Spam shoot prevention.
     if (Time.time > nextFire) {
       Animal animal = GetClosestToEnd();
@@ -30,6 +38,17 @@ public class Tower : MonoBehaviour {
         Shoot(animal);
       }
     }
+  }
+
+
+  /**
+   * Enables selection visualization if selected.
+   * 
+   * @param isSelected - if the tower is selected or not.
+   */
+  public void Selected(bool isSelected) {
+    radiusDisplay.SetActive(isSelected);
+    radiusDisplay.transform.localScale = new Vector2(radius * 2, radius * 2);
   }
 
 

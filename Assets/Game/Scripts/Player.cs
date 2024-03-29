@@ -7,17 +7,68 @@ public class Player : MonoBehaviour {
   private Camera cam;
   private bool isPlacing;
 
+  private Tower selectedTower;
+
 
   private void Awake() {
     cam = Camera.main;
   }
 
-  private void Update(){
-
+  private void Update() {
+    TrackClicks();
   }
 
-  private void selectTower(Tower t){
-    
+
+  /**
+   * Tracks the user's clicks for selection/deselection.
+   */
+  private void TrackClicks() {
+    // User left clicked.
+    if (Input.GetMouseButton(0)) {
+      // Get mouse position.
+      Vector3 mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
+      mousepos.z = -30;
+      RaycastHit2D hit = Physics2D.Raycast(mousepos, Vector3.zero);
+
+      // Clicked on a collider.
+      if (hit.collider != null) {
+        Tower tower = hit.collider.gameObject.GetComponent<Tower>();
+        // Collider is a tower and exists, select it.
+        if (tower != null) {
+          SelectTower(tower);
+          return;
+        }
+
+        // Not a tower.
+        if (hit.collider.gameObject.layer != LayerMask.NameToLayer("Tower")) {
+          UnselectTower();
+        }
+      }
+    }
+  }
+
+
+  /**
+   * User unselected the tower.
+   */
+  private void UnselectTower() {
+    if (selectedTower != null) {
+      UIManager.instance.DeselectTower();
+      selectedTower.Selected(false);
+      selectedTower = null;
+    }
+  }
+
+
+  /**
+   * User clicked on tower: select it.
+   * 
+   * @param tower - the tower that was clicked.
+   */
+  private void SelectTower(Tower tower) {
+    selectedTower = tower;
+    UIManager.instance.SelectTower(tower);
+    selectedTower.Selected(true);
   }
 
 
