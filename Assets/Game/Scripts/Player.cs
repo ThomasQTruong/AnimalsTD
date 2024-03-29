@@ -26,9 +26,9 @@ public class Player : MonoBehaviour {
     // User left clicked.
     if (Input.GetMouseButton(0)) {
       // Get mouse position.
-      Vector3 mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
-      mousepos.z = -30;
-      RaycastHit2D hit = Physics2D.Raycast(mousepos, Vector3.zero);
+      Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+      mousePos.z = -30;
+      RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector3.zero);
 
       // Clicked on a collider.
       if (hit.collider != null) {
@@ -39,8 +39,9 @@ public class Player : MonoBehaviour {
           return;
         }
 
-        // Not a tower.
-        if (hit.collider.gameObject.layer != LayerMask.NameToLayer("Tower")) {
+        // Not a tower or shop menu.
+        if (hit.collider.gameObject.layer != LayerMask.NameToLayer("Tower") &&
+            hit.collider.gameObject.layer != LayerMask.NameToLayer("UI")) {
           UnselectTower();
         }
       }
@@ -114,8 +115,10 @@ public class Player : MonoBehaviour {
     radius.transform.localScale = new Vector2(currentPlaceBuffer.radius * 2, currentPlaceBuffer.radius * 2);
 
     while (isPlacing) {
+      // Get mouse position.
       Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
       mousePos.z = 0;
+      RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector3.zero);
 
       // Makes visualizations follow the mouse.
       ghost.transform.position = mousePos;
@@ -130,8 +133,9 @@ public class Player : MonoBehaviour {
         Destroy(ghost);
         Destroy(radius);
         
-        // Unable to afford tower, stop placement.
-        if (GameData.instance.money < currentPlaceBuffer.price) {
+        // Unable to afford tower or out of bounds, stop placement.
+        if (GameData.instance.money < currentPlaceBuffer.price
+            || hit.collider.gameObject.layer != LayerMask.NameToLayer("Map")) {
           currentPlaceBuffer = null;
           break;
         }
