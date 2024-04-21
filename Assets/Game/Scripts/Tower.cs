@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Tower : MonoBehaviour {
-  public string name;
+  public new string name;
   public float fireRate = 1;
   public float radius = 1;
 
@@ -116,7 +116,7 @@ public class Tower : MonoBehaviour {
    */
   private void Shoot(Animal target) {
     float dist = Vector2.Distance(transform.position, target.transform.position);
-    Vector2 prediction = (Vector2)target.transform.position - (target.velocity * dist / speed * 2);
+    Vector2 prediction = (Vector2)target.transform.position - (target.velocity * dist / (speed * 2));
     transform.up = prediction - (Vector2)transform.position;
     Projectile p = Instantiate(projectile, transform.position, transform.rotation);
     p.parent = this;
@@ -124,7 +124,7 @@ public class Tower : MonoBehaviour {
 
 
   /**
-   * Draws the radius of the tower.
+   * Draws the radius of the tower (only for editor, not user).
    */
   private void OnDrawGizmosSelected() {
     Gizmos.color = Color.red;
