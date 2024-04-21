@@ -40,8 +40,7 @@ public class Player : MonoBehaviour {
         }
 
         // Not a tower or shop menu.
-        if (hit.collider.gameObject.layer != LayerMask.NameToLayer("Tower") &&
-            hit.collider.gameObject.layer != LayerMask.NameToLayer("UI")) {
+        if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Map")) {
           UnselectTower();
         }
       }
