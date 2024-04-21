@@ -49,6 +49,9 @@ Darren Manalo
 ## Credits
 #### Development Guide(s)
 - [Bloons TD Tutorial](https://www.youtube.com/watch?v=Iy03ja20qz0)
+- [Anchor Points](https://www.youtube.com/watch?v=jcw4cBJbvrc)
+- [Resolution Scaling](https://www.youtube.com/watch?v=hXU-ZJb6GHw)
 #### Assets
-- [Animal Cube - Cats](https://assetstore.unity.com/packages/2d/animal-cube-cat-series-2d-asset-208164)
-- [Animal Cube - Ducks](https://assetstore.unity.com/packages/2d/animal-cube-duck-series-2d-asset-222908)
+- [Images: Animal Cube - Cats](https://assetstore.unity.com/packages/2d/animal-cube-cat-series-2d-asset-208164)
+- [Images: Animal Cube - Ducks](https://assetstore.unity.com/packages/2d/animal-cube-duck-series-2d-asset-222908)
+- [Plugin: Auto Letterbox (Auto Scaling)](https://assetstore.unity.com/packages/tools/camera/auto-letterbox-56814)
