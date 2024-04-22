@@ -10,7 +10,8 @@ public class Animal : MonoBehaviour {
   public int value;               // Amount of money to give when dead.
   public DamageType resistances;  // The type of damage the animal is resistant against.
 
-  private int _waypointIndex;  // Index of the waypoint it is going towards.
+  private int _waypointIndex;                       // Index of the waypoint it is going towards.
+  private float previousDistance = float.MaxValue;  // Keep track of the previous distance.
 
   private void Update() {
     Move();
@@ -39,8 +40,10 @@ public class Animal : MonoBehaviour {
     transform.position = nextPosition;
 
     // Reached a waypoint, move to next waypoint.
-    if (Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex)) < 0.13f) {
+    float currentDistance = Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex));
+    if (previousDistance - currentDistance <= 0.0f) {
       ++_waypointIndex;
+      previousDistance = float.MaxValue;  // Reset previous distance since new waypoint.
 
       // Reached the end of the track.
       if (_waypointIndex >= GameData.instance.track.waypoints.Length) {
@@ -48,6 +51,9 @@ public class Animal : MonoBehaviour {
         GameData.instance.health -= damage;
         --GameData.instance.animalsLeft;
       }
+    } else {
+      // Did not reach a waypoint, keep current distance.
+      previousDistance = currentDistance;
     }
   }
 
