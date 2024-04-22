@@ -42,8 +42,11 @@ public class Animal : MonoBehaviour {
     // Reached a waypoint, move to next waypoint.
     float currentDistance = Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex));
     if (previousDistance - currentDistance <= 0.0f) {
+      // Readjust position incase it went past the waypoint.
+      transform.position = GameData.instance.track.GetWaypointPosition(_waypointIndex);
       ++_waypointIndex;
-      previousDistance = float.MaxValue;  // Reset previous distance since new waypoint.
+      // Reset previous distance since new waypoint.
+      previousDistance = float.MaxValue;
 
       // Reached the end of the track.
       if (_waypointIndex >= GameData.instance.track.waypoints.Length) {
