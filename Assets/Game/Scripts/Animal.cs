@@ -39,7 +39,7 @@ public class Animal : MonoBehaviour {
     transform.position = nextPosition;
 
     // Reached a waypoint, move to next waypoint.
-    if (Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex)) < 0.02f) {
+    if (Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex)) < 0.1f) {
       ++_waypointIndex;
 
       // Reached the end of the track.
