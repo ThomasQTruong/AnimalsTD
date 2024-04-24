@@ -109,6 +109,8 @@ public class Player : MonoBehaviour {
    * Placement process: while the user is currently trying to place a tower.
    */
   IEnumerator Place() {
+    bool valid = true;  // If the placement is valid.
+
     // Create a visualization for the user to see while placing.
     GameObject ghost = Instantiate(currentPlaceBuffer.mesh, Vector3.zero, Quaternion.identity);
     GameObject radius = Instantiate(currentPlaceBuffer.radiusDisplay, Vector3.zero, Quaternion.identity);
@@ -124,6 +126,22 @@ public class Player : MonoBehaviour {
       ghost.transform.position = mousePos;
       radius.transform.position = mousePos;
 
+      // Adjust color based on valid/invalid placement.
+      Renderer radiusRenderer = radius.GetComponent<Renderer>();
+      if (hit.collider != null && hit.collider.name == "Map"
+              && GameData.instance.money >= currentPlaceBuffer.price) {
+        if (!valid) {
+          radiusRenderer.material.SetColor("_Color", Color.white);
+          valid = true;
+        }
+      }
+      else {
+        if (valid) {
+          radiusRenderer.material.SetColor("_Color", Color.red);
+          valid = false;
+        }
+      }
+
       // Is a left click.
       if (Input.GetMouseButtonDown(0)) {
         // Toggle placement flag.
@@ -132,10 +150,9 @@ public class Player : MonoBehaviour {
         // Remove visualization after placing.
         Destroy(ghost);
         Destroy(radius);
-        
-        // Unable to afford tower or out of bounds, stop placement.
-        if (GameData.instance.money < currentPlaceBuffer.price
-            || hit.collider.gameObject.layer != LayerMask.NameToLayer("Map")) {
+
+        // Out of bounds or unable to afford tower, cancel placement.
+        if (hit.collider.name != "Map" || GameData.instance.money < currentPlaceBuffer.price) {
           currentPlaceBuffer = null;
           break;
         }
