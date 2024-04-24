@@ -4,8 +4,7 @@ using UnityEngine;
 
 
 // The types of damage in the game.
-public enum DamageType
-{
+public enum DamageType {
   Standard,
   Explosive,
   Fire,
@@ -13,8 +12,7 @@ public enum DamageType
 }
 
 
-public class GameData : MonoBehaviour
-{
+public class GameData : MonoBehaviour {
   public static GameData instance;  // Limits to one instance.
   public GameObject map;            // Current map of the game.
   public Track track;               // Track of the current map.
@@ -59,6 +57,12 @@ public class GameData : MonoBehaviour
       yield return new WaitForSeconds(round.spawnDelay);
     }
 
+    // Wait until there are no animals left.
+    while (animalsLeft > 0) {
+      yield return null;
+    }
+
+    // No animals left, end round and give money.
     roundInProgress = false;
     money += round.moneyGain;
   }
