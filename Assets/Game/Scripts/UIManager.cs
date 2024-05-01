@@ -14,10 +14,7 @@ public class UIManager : MonoBehaviour {
   public TMP_Text roundText;
 
   private Tower selectedTower;
-
-  // public GameObject scrollBar;
-  //scrollBarList = scrollBar.getComponent<ScrollBar>()
-  
+ 
 
   /**
    * Sells the tower that is selected.
