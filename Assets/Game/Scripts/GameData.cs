@@ -15,7 +15,7 @@ public enum DamageType {
 
 public class GameData : MonoBehaviour {
   public static GameData instance;  // Limits to one instance.
-  public GameObject gameOver;
+  public GameObject gameOver;       // Game over screen object.
 
   public GameObject map;            // Current map of the game.
   public Track track;               // Track of the current map.
@@ -26,8 +26,10 @@ public class GameData : MonoBehaviour {
   public RoundData[] rounds;
   public int currentRound = 0;
   public int animalsLeft = 0;
-
-  private bool roundInProgress;
+  
+  private bool autoStartRound = false;        // The toggle for auto starting rounds.
+  private bool startCoroutineActive = false;  // Whether the start coroutine is active or not.
+  private bool roundInProgress;               // Whether the round is in progress or not.
 
 
   public void Start() {
@@ -77,18 +79,47 @@ public class GameData : MonoBehaviour {
 
 
   /**
-   * Starts the next round if possible.
+   * Button function to start the round.
    */
-  public void NextRound() {
-    // Round is still in progress or there is still an animal left.
-    if (roundInProgress || animalsLeft > 0) {
-      return;
+  public void StartButton() {
+    // Prevent dupelicate coroutines.
+    if (!startCoroutineActive) {
+      startCoroutineActive = true;
+      StartCoroutine(StartRound());
     }
+  }
 
-    // Activate next round.
-    roundInProgress = true;
-    StartCoroutine(SpawnAnimals());
-    ++currentRound;
+
+  /**
+   * Toggles autoStartRound.
+   */
+  public void ToggleAutoStartRound() {
+    autoStartRound = !autoStartRound;
+    // User wants to autostart while round is in progress, put in loop if not looped already.
+    if (autoStartRound && roundInProgress && !startCoroutineActive) {
+      startCoroutineActive = true;
+      StartCoroutine(StartRound());
+    }
+  }
+
+
+  /**
+   * Starts the next round if possible.
+   * 
+   * @return IEnumerator - to keep the function alive for the auto start feature..
+   */
+  public IEnumerator StartRound() {
+    do {
+      // Round is not in progress.
+      if (!roundInProgress) {
+        // Activate next round.
+        roundInProgress = true;
+        StartCoroutine(SpawnAnimals());
+        ++currentRound;
+      }
+      yield return null;
+    } while (autoStartRound);
+    startCoroutineActive = false;
   }
 
 
