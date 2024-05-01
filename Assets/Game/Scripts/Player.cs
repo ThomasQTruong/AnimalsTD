@@ -25,6 +25,11 @@ public class Player : MonoBehaviour {
   private void TrackClicks() {
     // User left clicked.
     if (Input.GetMouseButton(0)) {
+      // User is dead; don't allow click.
+      if (GameData.instance.health <= 0) {
+        return;
+      }
+
       // Get mouse position.
       Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
       mousePos.z = -30;
@@ -41,7 +46,7 @@ public class Player : MonoBehaviour {
 
         // Not a tower or shop menu.
         if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Boundary") ||
-          hit.collider.gameObject.layer == LayerMask.NameToLayer("Map")) {
+            hit.collider.gameObject.layer == LayerMask.NameToLayer("Map")) {
           UnselectTower();
         }
       }
@@ -117,6 +122,11 @@ public class Player : MonoBehaviour {
     radius.transform.localScale = new Vector2(currentPlaceBuffer.radius * 2, currentPlaceBuffer.radius * 2);
 
     while (isPlacing) {
+      // Player died; cancel placement.
+      if (GameData.instance.health <= 0) {
+        yield break;
+      }
+
       // Get mouse position.
       Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
       mousePos.z = 0;
@@ -129,7 +139,7 @@ public class Player : MonoBehaviour {
       // Adjust color based on valid/invalid placement.
       Renderer radiusRenderer = radius.GetComponent<Renderer>();
       if (hit.collider != null && hit.collider.name == "Map"
-              && GameData.instance.money >= currentPlaceBuffer.price) {
+          && GameData.instance.money >= currentPlaceBuffer.price) {
         if (!valid) {
           radiusRenderer.material.SetColor("_Color", Color.white);
           valid = true;

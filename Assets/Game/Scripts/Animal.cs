@@ -52,6 +52,12 @@ public class Animal : MonoBehaviour {
       if (_waypointIndex >= GameData.instance.track.waypoints.Length) {
         Destroy(gameObject);
         GameData.instance.health -= damage;
+        // User died.
+        if (GameData.instance.health <= 0) {
+          // Set to 0 for no negative health.
+          GameData.instance.health = 0;
+          GameData.instance.EndGame();
+        }
         --GameData.instance.animalsLeft;
       }
     } else {

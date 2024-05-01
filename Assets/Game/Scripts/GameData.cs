@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 // The types of damage in the game.
@@ -14,6 +15,8 @@ public enum DamageType {
 
 public class GameData : MonoBehaviour {
   public static GameData instance;  // Limits to one instance.
+  public GameObject gameOver;
+
   public GameObject map;            // Current map of the game.
   public Track track;               // Track of the current map.
 
@@ -25,6 +28,11 @@ public class GameData : MonoBehaviour {
   public int animalsLeft = 0;
 
   private bool roundInProgress;
+
+
+  public void Start() {
+    Time.timeScale = 1;
+  }
 
 
   /**
@@ -40,7 +48,7 @@ public class GameData : MonoBehaviour {
    * 
    * @return IEnumerator - a "hack" to delay the spawns.
    */
-  private IEnumerator spawnAnimals() {
+  private IEnumerator SpawnAnimals() {
     // Grab the animals for the current round.
     RoundData round = rounds[currentRound];
 
@@ -79,8 +87,27 @@ public class GameData : MonoBehaviour {
 
     // Activate next round.
     roundInProgress = true;
-    StartCoroutine(spawnAnimals());
+    StartCoroutine(SpawnAnimals());
     ++currentRound;
+  }
+
+
+  /**
+   * Player lost the game (no health left).
+   */
+  public void EndGame() {
+    Time.timeScale = 0;
+    gameOver.SetActive(true);
+    GameOver.instance.UpdateRound();
+  }
+
+
+  /**
+   * Restarts the game.
+   */
+  public void RestartGame() {
+    // Reload current scene.
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
   }
 
 

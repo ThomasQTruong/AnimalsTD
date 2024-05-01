@@ -15,10 +15,10 @@ public class UIManager : MonoBehaviour {
 
   private Tower selectedTower;
 
-  /**public GameObject scrollBar;
+  // public GameObject scrollBar;
+  //scrollBarList = scrollBar.getComponent<ScrollBar>()
+  
 
-  scrollBarList = scrollBar.getComponent<ScrollBar>()
-  **/
   /**
    * Sells the tower that is selected.
    */
@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour {
    * 
    * @param tower - the tower that is selected.
    */
-  public void SelectTower(Tower tower){
+  public void SelectTower(Tower tower) {
     selectedTower = tower;
     towerMenu.SetActive(false);
     upgradeMenu.SetActive(true);
