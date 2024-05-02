@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
+  public GameObject game;
   private Tower currentPlaceBuffer;
   private Camera cam;
   private bool isPlacing;
@@ -15,7 +16,9 @@ public class Player : MonoBehaviour {
   }
 
   private void Update() {
-    TrackClicks();
+    if (game.activeInHierarchy) {
+      TrackClicks();
+    }
   }
 
 
