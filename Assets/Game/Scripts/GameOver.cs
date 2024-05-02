@@ -18,6 +18,6 @@ public class GameOver : MonoBehaviour {
 
 
   public void UpdateRound() {
-    roundText.text = "Round: " + GameData.instance.currentRound;
+    roundText.text = "Round: " + GameManager.instance.currentRound;
   }
 }

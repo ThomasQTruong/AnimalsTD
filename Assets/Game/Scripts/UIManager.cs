@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour {
    * Sells the tower that is selected.
    */
   public void SellSelectedTower() {
-    GameData.instance.money += selectedTower.price / 2;
+    GameManager.instance.money += selectedTower.price / 2;
     Destroy(selectedTower.gameObject);
     DeselectTower();
   }
@@ -51,9 +51,9 @@ public class UIManager : MonoBehaviour {
    * Updates the Health, Money, and Round info for the UI.
    */
   public void UpdateInfoUI() {
-    healthText.text = "Health: " + GameData.instance.health;
-    moneyText.text = "Money: " + GameData.instance.money;
-    roundText.text = "Round: " + GameData.instance.currentRound;
+    healthText.text = "Health: " + GameManager.instance.health;
+    moneyText.text = "Money: " + GameManager.instance.money;
+    roundText.text = "Round: " + GameManager.instance.currentRound;
   }
 
 

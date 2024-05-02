@@ -23,7 +23,7 @@ public class Animal : MonoBehaviour {
    */
   private void Move() {
     Vector2 nextPosition = GetNextPosition();
-    velocity = (transform.position * GameData.instance.track.GetWaypointPosition(_waypointIndex) * speed).normalized;
+    velocity = (transform.position * GameManager.instance.track.GetWaypointPosition(_waypointIndex) * speed).normalized;
 
     // Readjust rotation of the Sprite.
     Vector2 direction = (Vector2)gameObject.transform.position - nextPosition;
@@ -40,25 +40,25 @@ public class Animal : MonoBehaviour {
     transform.position = nextPosition;
 
     // Reached a waypoint, move to next waypoint.
-    float currentDistance = Vector2.Distance(transform.position, GameData.instance.track.GetWaypointPosition(_waypointIndex));
+    float currentDistance = Vector2.Distance(transform.position, GameManager.instance.track.GetWaypointPosition(_waypointIndex));
     if (previousDistance - currentDistance <= 0.0f) {
       // Readjust position incase it went past the waypoint.
-      transform.position = GameData.instance.track.GetWaypointPosition(_waypointIndex);
+      transform.position = GameManager.instance.track.GetWaypointPosition(_waypointIndex);
       ++_waypointIndex;
       // Reset previous distance since new waypoint.
       previousDistance = float.MaxValue;
 
       // Reached the end of the track.
-      if (_waypointIndex >= GameData.instance.track.waypoints.Length) {
+      if (_waypointIndex >= GameManager.instance.track.waypoints.Length) {
         Destroy(gameObject);
-        GameData.instance.health -= damage;
+        GameManager.instance.health -= damage;
         // User died.
-        if (GameData.instance.health <= 0) {
+        if (GameManager.instance.health <= 0) {
           // Set to 0 for no negative health.
-          GameData.instance.health = 0;
-          GameData.instance.EndGame();
+          GameManager.instance.health = 0;
+          GameManager.instance.EndGame();
         }
-        --GameData.instance.animalsLeft;
+        --GameManager.instance.animalsLeft;
       }
     } else {
       // Did not reach a waypoint, keep current distance.
@@ -73,7 +73,7 @@ public class Animal : MonoBehaviour {
    * @return float - the distance away from the end.
    */
   public float GetRemainingDistance() {
-    return GameData.instance.track.GetCumulativeDist(_waypointIndex, transform.position);
+    return GameManager.instance.track.GetCumulativeDist(_waypointIndex, transform.position);
   }
 
 
@@ -83,7 +83,7 @@ public class Animal : MonoBehaviour {
    * @return Vector2 - the next position.
    */
   private Vector2 GetNextPosition() {
-    Vector2 nextPosition = GameData.instance.track.GetWaypointPosition(_waypointIndex);
+    Vector2 nextPosition = GameManager.instance.track.GetWaypointPosition(_waypointIndex);
     Vector2 direction = nextPosition - (Vector2)transform.position;
 
     return (Vector2)transform.position + speed * Time.deltaTime * direction.normalized;
@@ -95,8 +95,8 @@ public class Animal : MonoBehaviour {
    */
   private void Die() {
     Destroy(gameObject);
-    GameData.instance.money += value;
-    --GameData.instance.animalsLeft;
+    GameManager.instance.money += value;
+    --GameManager.instance.animalsLeft;
   }
 
 

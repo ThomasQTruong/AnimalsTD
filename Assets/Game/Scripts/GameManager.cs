@@ -13,9 +13,10 @@ public enum DamageType {
 }
 
 
-public class GameData : MonoBehaviour {
-  public static GameData instance;  // Limits to one instance.
-  public GameObject gameOver;       // Game over screen object.
+public class GameManager : MonoBehaviour {
+  public static GameManager instance;     // Limits to one instance.
+  public GameObject gameOver;             // Game over screen object.
+  public GameObject forfeitConfirmation;  // Forfeit confirmation UI.
 
   public GameObject map;            // Current map of the game.
   public Track track;               // Track of the current map.
@@ -161,5 +162,15 @@ public class GameData : MonoBehaviour {
     public Animal animal;
     public int count = 1;
     public float spawnRate = 0.5f;
+  }
+
+
+  /**
+   * Toggles the visibility for the forfeit confirmation UI.
+   * 
+   * @param visible - whether the UI is shown or hidden.
+   */
+  public void SetForfeitUIActive(bool visible) {
+    forfeitConfirmation.SetActive(visible);
   }
 }

@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
     // User left clicked.
     if (Input.GetMouseButton(0)) {
       // User is dead; don't allow click.
-      if (GameData.instance.health <= 0) {
+      if (GameManager.instance.health <= 0) {
         return;
       }
 
@@ -126,7 +126,7 @@ public class Player : MonoBehaviour {
 
     while (isPlacing) {
       // Player died; cancel placement.
-      if (GameData.instance.health <= 0) {
+      if (GameManager.instance.health <= 0) {
         yield break;
       }
 
@@ -142,7 +142,7 @@ public class Player : MonoBehaviour {
       // Adjust color based on valid/invalid placement.
       Renderer radiusRenderer = radius.GetComponent<Renderer>();
       if (hit.collider != null && hit.collider.name == "Map"
-          && GameData.instance.money >= currentPlaceBuffer.price) {
+          && GameManager.instance.money >= currentPlaceBuffer.price) {
         if (!valid) {
           radiusRenderer.material.SetColor("_Color", Color.white);
           valid = true;
@@ -165,14 +165,14 @@ public class Player : MonoBehaviour {
         Destroy(radius);
 
         // Out of bounds or unable to afford tower, cancel placement.
-        if (hit.collider.name != "Map" || GameData.instance.money < currentPlaceBuffer.price) {
+        if (hit.collider.name != "Map" || GameManager.instance.money < currentPlaceBuffer.price) {
           currentPlaceBuffer = null;
           break;
         }
 
         // Has money, place tower and remove money.
         PlaceTower(mousePos);
-        GameData.instance.money -= currentPlaceBuffer.price;
+        GameManager.instance.money -= currentPlaceBuffer.price;
         currentPlaceBuffer = null;
       } else if (Input.GetMouseButtonDown(1)) {
         // User right clicked (cancel).
