@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class UIManager : MonoBehaviour {
-  public static UIManager instance;
+public class GameUIManager : MonoBehaviour {
+  public static GameUIManager instance;
   public GameObject towerMenu;
   public GameObject upgradeMenu;
 
@@ -13,15 +13,15 @@ public class UIManager : MonoBehaviour {
   public TMP_Text healthText;
   public TMP_Text roundText;
 
-  private Tower selectedTower;
+  private Tower _selectedTower;
  
 
   /**
    * Sells the tower that is selected.
    */
   public void SellSelectedTower() {
-    GameManager.instance.money += selectedTower.price / 2;
-    Destroy(selectedTower.gameObject);
+    GameManager.instance.money += _selectedTower.price / 2;
+    Destroy(_selectedTower.gameObject);
     DeselectTower();
   }
 
@@ -32,7 +32,7 @@ public class UIManager : MonoBehaviour {
    * @param tower - the tower that is selected.
    */
   public void SelectTower(Tower tower) {
-    selectedTower = tower;
+    _selectedTower = tower;
     towerMenu.SetActive(false);
     upgradeMenu.SetActive(true);
   }
@@ -69,7 +69,11 @@ public class UIManager : MonoBehaviour {
    * Limits object to one instance.
    */
   private void Awake() {
-    instance = this;
+    if (instance == null) {
+      instance = this;
+    } else {
+      Destroy(gameObject);
+    }
   }
 
 

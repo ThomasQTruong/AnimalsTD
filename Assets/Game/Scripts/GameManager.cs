@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-// The types of damage in the game.
+/**
+ * The types of damage in the game.
+ */
 public enum DamageType {
   Standard,
   Explosive,
@@ -18,31 +20,27 @@ public class GameManager : MonoBehaviour {
   public GameObject gameOver;             // Game over screen object.
   public GameObject forfeitConfirmation;  // Forfeit confirmation UI.
 
-  public GameObject map;            // Current map of the game.
-  public Track track;               // Track of the current map.
-
   // Game stats.
   public int health = 100;
   public int money = 1000;
   public RoundData[] rounds;
   public int currentRound = 0;
   public int animalsLeft = 0;
-  
-  private bool autoStartRound = false;        // The toggle for auto starting rounds.
-  private bool startCoroutineActive = false;  // Whether the start coroutine is active or not.
-  private bool roundInProgress;               // Whether the round is in progress or not.
 
-
-  public void Start() {
-    Time.timeScale = 1;
-  }
+  private bool _autoStartRound = false;        // The toggle for auto starting rounds.
+  private bool _startCoroutineActive = false;  // Whether the start coroutine is active or not.
+  private bool _roundInProgress;               // Whether the round is in progress or not.
 
 
   /**
    * Initialize the instance.
    */
   public void Awake() {
-    instance = this;
+    if (instance == null) {
+      instance = this;
+    } else {
+      Destroy(gameObject);
+    }
   }
 
 
@@ -60,7 +58,7 @@ public class GameManager : MonoBehaviour {
       // For every data.
       for (int i = 0; i < data.count; ++i) {
         // Create animal.
-        Animal animal = Instantiate(data.animal, track.GetWaypointPosition(0), Quaternion.identity);
+        Instantiate(data.animal, GameData.instance.track.GetWaypointPosition(0), Quaternion.identity);
         ++animalsLeft;
 
         yield return new WaitForSeconds(data.spawnRate);
@@ -74,7 +72,7 @@ public class GameManager : MonoBehaviour {
     }
 
     // No animals left, end round and give money.
-    roundInProgress = false;
+    _roundInProgress = false;
     money += round.moneyGain;
   }
 
@@ -84,8 +82,8 @@ public class GameManager : MonoBehaviour {
    */
   public void StartButton() {
     // Prevent dupelicate coroutines.
-    if (!startCoroutineActive) {
-      startCoroutineActive = true;
+    if (!_startCoroutineActive) {
+      _startCoroutineActive = true;
       StartCoroutine(StartRound());
     }
   }
@@ -95,10 +93,10 @@ public class GameManager : MonoBehaviour {
    * Toggles autoStartRound.
    */
   public void ToggleAutoStartRound() {
-    autoStartRound = !autoStartRound;
+    _autoStartRound = !_autoStartRound;
     // User wants to autostart while round is in progress, put in loop if not looped already.
-    if (autoStartRound && roundInProgress && !startCoroutineActive) {
-      startCoroutineActive = true;
+    if (_autoStartRound && _roundInProgress && !_startCoroutineActive) {
+      _startCoroutineActive = true;
       StartCoroutine(StartRound());
     }
   }
@@ -112,15 +110,15 @@ public class GameManager : MonoBehaviour {
   public IEnumerator StartRound() {
     do {
       // Round is not in progress.
-      if (!roundInProgress) {
+      if (!_roundInProgress) {
         // Activate next round.
-        roundInProgress = true;
+        _roundInProgress = true;
         StartCoroutine(SpawnAnimals());
         ++currentRound;
       }
       yield return null;
-    } while (autoStartRound);
-    startCoroutineActive = false;
+    } while (_autoStartRound);
+    _startCoroutineActive = false;
   }
 
 
@@ -140,6 +138,7 @@ public class GameManager : MonoBehaviour {
   public void RestartGame() {
     // Reload current scene.
     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    GameData.instance.restart = true;
   }
 
 
@@ -172,5 +171,15 @@ public class GameManager : MonoBehaviour {
    */
   public void SetForfeitUIActive(bool visible) {
     forfeitConfirmation.SetActive(visible);
+  }
+
+
+  /**
+   * Sets the difficulty of a game to a given value.
+   * 
+   * @param value - the value that represents the difficulty: easy(0), medium(1), hard(2).
+   */
+  public void SetDifficulty(int value) {
+    GameData.instance.difficulty = value;
   }
 }

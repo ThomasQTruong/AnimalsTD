@@ -62,7 +62,7 @@ public class Player : MonoBehaviour {
    */
   private void UnselectTower() {
     if (selectedTower != null) {
-      UIManager.instance.DeselectTower();
+      GameUIManager.instance.DeselectTower();
       selectedTower.Selected(false);
       selectedTower = null;
     }
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour {
    */
   private void SelectTower(Tower tower) {
     selectedTower = tower;
-    UIManager.instance.SelectTower(tower);
+    GameUIManager.instance.SelectTower(tower);
     selectedTower.Selected(true);
   }
 

@@ -17,7 +17,7 @@ public class Tower : MonoBehaviour {
   public GameObject radiusDisplay;
   public Projectile projectile;
   public GameObject mesh;
-  private float nextFire;
+  private float _nextFire;
 
 
   private void Update() {
@@ -30,11 +30,11 @@ public class Tower : MonoBehaviour {
    */
   private void ShootAtAnimalsInRange() {
     // Spam shoot prevention.
-    if (Time.time > nextFire) {
+    if (Time.time > _nextFire) {
       Animal animal = GetClosestToEnd();
       // Animal still exists.
       if (animal != null) {
-        nextFire = Time.time + fireRate;
+        _nextFire = Time.time + fireRate;
         Shoot(animal);
       }
     }

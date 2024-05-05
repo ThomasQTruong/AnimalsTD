@@ -7,13 +7,13 @@ public class Projectile : MonoBehaviour {
   public Tower parent;           // The tower that throws this projectile.
   public float lifetime = 5.0f;  // The amount of seconds it is alive for.
 
-  private int pierce;
+  private int _pierce;
 
 
   private void Start() {
     // Kill projectile when its lifetime expires.
     Destroy(gameObject, lifetime);
-    pierce = parent.pierce;
+    _pierce = parent.pierce;
   }
 
   private void Update() {
@@ -40,11 +40,11 @@ public class Projectile : MonoBehaviour {
 
     // Animal exists.
     if (animal != null) {
-      if (pierce <= 0) {
+      if (_pierce <= 0) {
         Destroy(gameObject);
         return;
       }
-      --pierce;
+      --_pierce;
       animal.TakeDamage(parent.damage, parent.damageTypes);
     }
   }
