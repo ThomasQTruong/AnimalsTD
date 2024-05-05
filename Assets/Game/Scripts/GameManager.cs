@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour {
    * Initialize the instance.
    */
   public void Awake() {
+    Time.timeScale = 1;
     if (instance == null) {
       instance = this;
     } else {

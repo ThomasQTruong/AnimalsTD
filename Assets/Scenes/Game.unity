@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 458293689}
   forfeitConfirmation: {fileID: 919147619}
-  health: 100
+  health: 3
   money: 1000
   rounds:
   - animals:
@@ -14077,10 +14077,10 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 519420032}
   - {fileID: 316127995}
   - {fileID: 415367643}
   - {fileID: 167846771}
-  - {fileID: 519420032}
   - {fileID: 1861928082}
   - {fileID: 1226901684}
   - {fileID: 648282776}
