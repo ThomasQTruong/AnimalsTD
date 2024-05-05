@@ -1,7 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Animal AI and data.
+ */
 public class Animal : MonoBehaviour {
   public float speed = 3.0f;      // How fast the animal is.
   public Vector2 velocity;        // The current velocity of the animal.
@@ -12,6 +14,7 @@ public class Animal : MonoBehaviour {
 
   private int _waypointIndex;                       // Index of the waypoint it is going towards.
   private float _previousDistance = float.MaxValue;  // Keep track of the previous distance.
+
 
   private void Update() {
     Move();
@@ -73,7 +76,7 @@ public class Animal : MonoBehaviour {
    * @return float - the distance away from the end.
    */
   public float GetRemainingDistance() {
-    return GameData.instance.track.GetCumulativeDist(_waypointIndex, transform.position);
+    return GameData.instance.track.GetCumulativeDistance(_waypointIndex, transform.position);
   }
 
 

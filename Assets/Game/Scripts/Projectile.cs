@@ -1,8 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
+/**
+ * Projectile collision, motion, and data.
+ */
 public class Projectile : MonoBehaviour {
   public Tower parent;           // The tower that throws this projectile.
   public float lifetime = 5.0f;  // The amount of seconds it is alive for.
@@ -15,6 +16,7 @@ public class Projectile : MonoBehaviour {
     Destroy(gameObject, lifetime);
     _pierce = parent.pierce;
   }
+
 
   private void Update() {
     Motion();

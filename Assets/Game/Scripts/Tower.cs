@@ -1,7 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Tower AI, data, and settings.
+ */
 public class Tower : MonoBehaviour {
   public new string name;
   public float fireRate = 1;

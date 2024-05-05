@@ -1,7 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Player actions and data.
+ */
 public class Player : MonoBehaviour {
   public GameObject game;
   private Tower currentPlaceBuffer;
@@ -14,6 +17,7 @@ public class Player : MonoBehaviour {
   private void Awake() {
     cam = Camera.main;
   }
+
 
   private void Update() {
     if (game.activeInHierarchy) {

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +14,9 @@ public enum DamageType {
 }
 
 
+/**
+ * Tools for managing the game.
+ */
 public class GameManager : MonoBehaviour {
   public static GameManager instance;     // Limits to one instance.
   public GameObject gameOver;             // Game over screen object.

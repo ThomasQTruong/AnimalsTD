@@ -1,25 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Types of scene reload.
+ */
 public enum ReloadType {
   None,  // Default value: 0.
   Quit,
   Restart
 }
 
+
+/**
+ * Holds the persistent data for the game.
+ */
 public class GameData : MonoBehaviour {
   public static GameData instance;  // Limits to one instance.
-  
-  public GameObject map;            // Current map of the game.
-  public Track track;               // Track of the current map.
 
+  public GameObject map;     // Current map of the game.
+  public Track track;        // Track of the current map.
+  
   public int difficulty = (int)Difficulty.Easy;  // The difficulty of the game.
 
-  public GameObject[] maps;  // Holds all of the maps of the game.
-
-  public string mapName;        // Name of the current map.
   public ReloadType reloadType = ReloadType.None;
+  public string mapName;     // Name of the current map.
+  public GameObject[] maps;  // Holds all of the maps of the game.
 
 
   /**

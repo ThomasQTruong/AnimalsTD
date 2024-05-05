@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Track : MonoBehaviour
-{
+
+/**
+ * Track related utilities.
+ */
+public class Track : MonoBehaviour {
   public Transform[] waypoints;  // Depicts the pathing of the animals.
 
 
@@ -41,7 +42,7 @@ public class Track : MonoBehaviour
    * @param index - the current waypoint's index.
    * @param pos - the current position of the object.
    */
-  public float GetCumulativeDist(int index, Vector2 pos) {
+  public float GetCumulativeDistance(int index, Vector2 pos) {
     // Current distance away from the target waypoint.
     float distance = Vector2.Distance(pos, waypoints[index].position);
 

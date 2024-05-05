@@ -1,8 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
+/**
+ * Tools for managing the game interfaces UI (i.e. shop).
+ */
 public class GameUIManager : MonoBehaviour {
   public static GameUIManager instance;
   public GameObject towerMenu;

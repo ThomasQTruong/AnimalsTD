@@ -1,7 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Tools for managing the main menu UI.
+ */
 public class MainMenuManager : MonoBehaviour {
   public static MainMenuManager instance;
   public GameObject mainMenu;

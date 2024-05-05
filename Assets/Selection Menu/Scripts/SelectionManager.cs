@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -13,6 +11,9 @@ public enum Difficulty {
 };
 
 
+/**
+ * Tools for managing the Selection UI.
+ */
 public class SelectionManager : MonoBehaviour {
   public static SelectionManager instance;
   

@@ -1,8 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
+/**
+ * Tools for the Game Over UI.
+ */
 public class GameOver : MonoBehaviour {
   public static GameOver instance;
 
