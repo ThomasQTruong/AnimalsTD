@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 
 public enum Difficulty {
@@ -24,8 +25,8 @@ public class SelectionManager : MonoBehaviour {
 
   // Difficulty Selection Info
   private readonly string[,] _difficultyInfo = {{"Easy", "1000", "100"},  // Easy
-                                                {"Medium", "900", "65"},  // Medium
-                                                {"Hard", "800", "30"}};   // Hard
+                                                {"Medium", "800", "65"},  // Medium
+                                                {"Hard", "600", "30"}};   // Hard
   public TMP_Text difficultyDisplay;
   public TMP_Text money;
   public TMP_Text health;
@@ -101,6 +102,9 @@ public class SelectionManager : MonoBehaviour {
         break;
       }
     }
+
+    GameManager.instance.money = Int32.Parse(_difficultyInfo[GameData.instance.difficulty, 1]);
+    GameManager.instance.health = Int32.Parse(_difficultyInfo[GameData.instance.difficulty, 2]);
   }
 
 

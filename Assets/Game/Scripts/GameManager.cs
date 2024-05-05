@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour {
   public GameObject forfeitConfirmation;  // Forfeit confirmation UI.
 
   // Game stats.
-  public int health = 100;
-  public int money = 1000;
+  public int money;
+  public int health;
   public RoundData[] rounds;
   public int currentRound = 0;
   public int animalsLeft = 0;
