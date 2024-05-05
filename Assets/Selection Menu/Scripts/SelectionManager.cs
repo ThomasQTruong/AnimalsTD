@@ -23,12 +23,12 @@ public class SelectionManager : MonoBehaviour {
   public GameObject mapSelector;          // The map selector UI object.
 
   // Difficulty Selection Info
-  private readonly string[,] _difficultyInfo = {{"Easy", "1000", "1"},      // Easy
-                                                {"Medium", "900", "1.25"},  // Medium
-                                                {"Hard", "800", "1.5"}};    // Hard
+  private readonly string[,] _difficultyInfo = {{"Easy", "1000", "100"},  // Easy
+                                                {"Medium", "900", "65"},  // Medium
+                                                {"Hard", "800", "30"}};   // Hard
   public TMP_Text difficultyDisplay;
-  public TMP_Text startingCash;
-  public TMP_Text priceMultiplier;
+  public TMP_Text money;
+  public TMP_Text health;
 
 
   public void Awake() {
@@ -79,8 +79,8 @@ public class SelectionManager : MonoBehaviour {
    */
   public void UpdateDifficultyInfo() {
     difficultyDisplay.text = _difficultyInfo[GameData.instance.difficulty, 0];
-    startingCash.text = "$" + _difficultyInfo[GameData.instance.difficulty, 1];
-    priceMultiplier.text = _difficultyInfo[GameData.instance.difficulty, 2] + "x";
+    money.text = "$" + _difficultyInfo[GameData.instance.difficulty, 1];
+    health.text = _difficultyInfo[GameData.instance.difficulty, 2];
   }
 
 

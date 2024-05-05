@@ -1897,7 +1897,7 @@ GameObject:
   - component: {fileID: 249310876}
   - component: {fileID: 249310875}
   m_Layer: 5
-  m_Name: StartingCash
+  m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3154,7 +3154,7 @@ GameObject:
   - component: {fileID: 394874624}
   - component: {fileID: 394874623}
   m_Layer: 5
-  m_Name: Price Modifier
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8335,7 +8335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Starting Cash
+  m_text: Money
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10975,8 +10975,8 @@ MonoBehaviour:
   game: {fileID: 939756499}
   mapSelector: {fileID: 648282775}
   difficultyDisplay: {fileID: 1660085292}
-  startingCash: {fileID: 1754294858}
-  priceMultiplier: {fileID: 1415766448}
+  money: {fileID: 1754294858}
+  health: {fileID: 1415766448}
 --- !u!1 &1622698101
 GameObject:
   m_ObjectHideFlags: 0
@@ -11034,7 +11034,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Price Multiplier
+  m_text: Health
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
