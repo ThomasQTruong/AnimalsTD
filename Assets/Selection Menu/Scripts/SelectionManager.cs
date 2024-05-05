@@ -38,7 +38,12 @@ public class SelectionManager : MonoBehaviour {
       Destroy(gameObject);
     }
 
-    if (GameData.instance.restart) {
+    if (GameData.instance.reloadType == ReloadType.Quit) {
+      // Is a quit, start at map selection.
+      MainMenuManager.instance.DisplayMainMenu(false);
+      DisplayMapSelection(true);
+    } else if (GameData.instance.reloadType == ReloadType.Restart) {
+      // Is a restart, start at game.
       PlayGame();
     }
   }

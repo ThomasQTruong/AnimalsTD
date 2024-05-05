@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ReloadType {
+  None,  // Default value: 0.
+  Quit,
+  Restart
+}
+
 public class GameData : MonoBehaviour {
   public static GameData instance;  // Limits to one instance.
   
@@ -13,7 +19,7 @@ public class GameData : MonoBehaviour {
   public GameObject[] maps;  // Holds all of the maps of the game.
 
   public string mapName;        // Name of the current map.
-  public bool restart = false;  // Whether it is a restart or not.
+  public ReloadType reloadType = ReloadType.None;
 
 
   /**

@@ -138,8 +138,8 @@ public class GameManager : MonoBehaviour {
    */
   public void RestartGame() {
     // Reload current scene.
+    GameData.instance.reloadType = ReloadType.Restart;
     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    GameData.instance.restart = true;
   }
 
 
@@ -182,5 +182,15 @@ public class GameManager : MonoBehaviour {
    */
   public void SetDifficulty(int value) {
     GameData.instance.difficulty = value;
+  }
+
+
+  /**
+   * Quits/forfeits the current game.
+   */
+  public void QuitGame() {
+    // Reload current scene.
+    GameData.instance.reloadType = ReloadType.Quit;
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
   }
 }
