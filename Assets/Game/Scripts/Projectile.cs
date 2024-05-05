@@ -40,12 +40,15 @@ public class Projectile : MonoBehaviour {
 
     // Animal exists.
     if (animal != null) {
+      // Only damage if the projectile can still pierce.
+      if (_pierce > 0) {
+        animal.TakeDamage(parent.damage, parent.damageTypes);
+      }
+      // Remove a pierce value and check if it should be destroyed.
+      --_pierce;
       if (_pierce <= 0) {
         Destroy(gameObject);
-        return;
       }
-      --_pierce;
-      animal.TakeDamage(parent.damage, parent.damageTypes);
     }
   }
 }
