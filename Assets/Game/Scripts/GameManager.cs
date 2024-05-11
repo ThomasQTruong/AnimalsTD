@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour {
   // Game stats.
   public int money;
   public int health;
-  public RoundData[] rounds;
   public int currentRound = 0;
   public int animalsLeft = 0;
 
@@ -53,20 +52,19 @@ public class GameManager : MonoBehaviour {
    * @return IEnumerator - a "hack" to delay the spawns.
    */
   private IEnumerator SpawnAnimals() {
-    // Grab the animals for the current round.
-    RoundData round = rounds[currentRound];
-
-    // For every animal data for the round.
-    foreach(AnimalData data in round.animals) {
-      // For every data.
-      for (int i = 0; i < data.count; ++i) {
+    // For every animal spawn for the round.
+    foreach (AnimalSpawn spawn in RoundManager.instance.spawnList) {
+      // For every count.
+      for (int i = 0; i < spawn.count; ++i) {
         // Create animal.
-        Instantiate(data.animal, GameData.instance.track.GetWaypointPosition(0), Quaternion.identity);
+        Instantiate(spawn.animal, GameData.instance.track.GetWaypointPosition(0), Quaternion.identity);
         ++animalsLeft;
 
-        yield return new WaitForSeconds(data.spawnRate);
+        yield return new WaitForSeconds(spawn.spawnRate);
       }
-      yield return new WaitForSeconds(round.spawnDelay);
+      // Finished spawning, increment for next round.
+      spawn.count += spawn.incrementPerRound;
+      yield return new WaitForSeconds(RoundManager.instance.spawnDelay);
     }
 
     // Wait until there are no animals left.
@@ -76,7 +74,7 @@ public class GameManager : MonoBehaviour {
 
     // No animals left, end round and give money.
     _roundInProgress = false;
-    money += round.moneyGain;
+    money += RoundManager.instance.moneyPerRound;
   }
 
 
@@ -114,10 +112,13 @@ public class GameManager : MonoBehaviour {
     do {
       // Round is not in progress.
       if (!_roundInProgress) {
+        // Increase round count and check if any new animal should be spawned.
+        ++currentRound;
+        RoundManager.instance.CheckForSpawn(currentRound);
+
         // Activate next round.
         _roundInProgress = true;
         StartCoroutine(SpawnAnimals());
-        ++currentRound;
       }
       yield return null;
     } while (_autoStartRound);
@@ -142,17 +143,6 @@ public class GameManager : MonoBehaviour {
     // Reload current scene.
     GameData.instance.reloadType = ReloadType.Restart;
     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-  }
-
-
-  /**
-   * The data of the round.
-   */
-  [System.Serializable]
-  public class RoundData {
-    public AnimalData[] animals;
-    public float spawnDelay = 0.6f;
-    public int moneyGain = 250;
   }
 
 

@@ -47,6 +47,11 @@ public class Player : MonoBehaviour {
         Tower tower = hit.collider.gameObject.GetComponent<Tower>();
         // Collider is a tower and exists, select it.
         if (tower != null) {
+          // If there is a tower selected currently, unselect it.
+          if (selectedTower != null) {
+            UnselectTower();
+          }
+
           SelectTower(tower);
           return;
         }

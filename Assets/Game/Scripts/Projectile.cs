@@ -40,8 +40,8 @@ public class Projectile : MonoBehaviour {
     // Get the animal that collided with projectile.
     Animal animal = collision.GetComponent<Animal>();
 
-    // Animal exists.
-    if (animal != null) {
+    // Animal and projectile exists.
+    if (animal != null && gameObject != null) {
       // Only damage if the projectile can still pierce.
       if (_pierce > 0) {
         animal.TakeDamage(parent.damage, parent.damageTypes);

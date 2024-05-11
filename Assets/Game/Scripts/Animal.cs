@@ -97,9 +97,12 @@ public class Animal : MonoBehaviour {
    * Kills the animal by projectile.
    */
   private void Die() {
-    Destroy(gameObject);
-    GameManager.instance.money += value;
-    --GameManager.instance.animalsLeft;
+    // Animal still exists (no dupelicate kill).
+    if (gameObject != null) {
+      Destroy(gameObject);
+      GameManager.instance.money += value;
+      --GameManager.instance.animalsLeft;
+    }
   }
 
 
@@ -113,7 +116,7 @@ public class Animal : MonoBehaviour {
     health -= damage;
     
     // Animal died.
-    if (health <= 0) {
+    if (health == 0) {
       Die();
     }
   }
