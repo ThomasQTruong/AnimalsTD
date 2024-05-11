@@ -22,8 +22,13 @@ public class GameUIManager : MonoBehaviour {
    * Sells the tower that is selected.
    */
   public void SellSelectedTower() {
-    GameManager.instance.money += _selectedTower.price / 2;
+    // Tower doesn't exist anymore!
+    if (_selectedTower == null) {
+      return;
+    }
+    // Tower exists, sell.
     Destroy(_selectedTower.gameObject);
+    GameManager.instance.money += (int)(_selectedTower.price * 0.8);
     DeselectTower();
   }
 
