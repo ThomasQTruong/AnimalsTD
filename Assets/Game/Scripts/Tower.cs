@@ -50,7 +50,7 @@ public class Tower : MonoBehaviour {
    */
   public void Selected(bool isSelected) {
     radiusDisplay.SetActive(isSelected);
-    radiusDisplay.transform.localScale = new Vector2(radius * 2, radius * 2);
+    radiusDisplay.transform.localScale = new Vector2(radius, radius);
   }
 
 

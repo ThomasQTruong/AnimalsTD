@@ -131,7 +131,7 @@ public class Player : MonoBehaviour {
     // Create a visualization for the user to see while placing.
     GameObject ghost = Instantiate(currentPlaceBuffer.mesh, Vector3.zero, Quaternion.identity);
     GameObject radius = Instantiate(currentPlaceBuffer.radiusDisplay, Vector3.zero, Quaternion.identity);
-    radius.transform.localScale = new Vector2(currentPlaceBuffer.radius * 2, currentPlaceBuffer.radius * 2);
+    radius.transform.localScale = new Vector2(currentPlaceBuffer.radius, currentPlaceBuffer.radius);
 
     while (isPlacing) {
       // Player died; cancel placement.
