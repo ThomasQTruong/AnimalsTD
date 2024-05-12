@@ -19,6 +19,26 @@ public class GameUIManager : MonoBehaviour {
  
 
   /**
+   * Limits object to one instance.
+   */
+  private void Awake() {
+    if (instance == null) {
+      instance = this;
+    } else {
+      Destroy(gameObject);
+    }
+  }
+
+
+  /**
+   * Updates the Info UI every frame.
+   */
+  void Update() {
+    UpdateInfoUI();
+  }
+
+
+  /**
    * Sells the tower that is selected.
    */
   public void SellSelectedTower() {
@@ -28,19 +48,24 @@ public class GameUIManager : MonoBehaviour {
     }
     // Tower exists, sell.
     Destroy(_selectedTower.gameObject);
-    GameManager.instance.money += (int)(_selectedTower.price * 0.8);
+    GameManager.instance.money += (int)(_selectedTower.GetValue() * GameManager.instance.sellRatio);
     DeselectTower();
   }
 
 
   /**
-   * Selects a tower; menu to buy turret disappears and upgrade menu appears.
+   * Selects a tower; hides shop menu and shows upgrade menu.
    * 
    * @param tower - the tower that is selected.
    */
   public void SelectTower(Tower tower) {
+    if (_selectedTower == tower) {
+      return;
+    }
+
     _selectedTower = tower;
     towerMenu.SetActive(false);
+    UpgradeUIManager.instance.UpdateMenu(tower);
     upgradeMenu.SetActive(true);
   }
 
@@ -49,6 +74,7 @@ public class GameUIManager : MonoBehaviour {
    * Unselects a tower; makes upgrade menu disappear and tower menu reappear.
    */
   public void DeselectTower() {
+    _selectedTower = null;
     towerMenu.SetActive(true);
     upgradeMenu.SetActive(false);
   }
@@ -65,22 +91,67 @@ public class GameUIManager : MonoBehaviour {
 
 
   /**
-   * Updates the Info UI every frame.
+   * Changes the selected tower's value by an amount.
+   * 
+   * @param amount - the amount to change the tower's value by.
    */
-  void Update() {
-    UpdateInfoUI();
+  public void ChangeTowerValue(int amount) {
+    // Tower doesn't exist!
+    if (_selectedTower == null) {
+      return;
+    }
+
+    // Tower exists, change value.
+    _selectedTower.ChangeValue(amount);
   }
 
 
   /**
-   * Limits object to one instance.
+   * Increases the selected tower's upgrade count.
    */
-  private void Awake() {
-    if (instance == null) {
-      instance = this;
-    } else {
-      Destroy(gameObject);
+  public void IncreaseUpgradeCount() {
+    ++_selectedTower.upgradeCount;
+  }
+
+
+  /**
+   * Checks if selected tower can be upgraded any further.
+   * 
+   * @return bool - whether the tower can still be upgraded or not.
+   */
+  public bool CanBeUpgraded() {
+    // Cannot upgrade non-existent towers.
+    if (_selectedTower == null) {
+      return false;
     }
+    return _selectedTower.upgradeCount < _selectedTower.maxUpgrades;
+  }
+
+
+  /**
+   * Applies the value changes when a tower is upgraded.
+   * 
+   * @param price - the price of the applied upgrade.
+   */
+  public void UpgradedTower(Upgrade upgrade) {
+    if (_selectedTower == null) {
+      return;
+    }
+
+    ChangeTowerValue(upgrade.price);
+    IncreaseUpgradeCount();
+    UpgradeUIManager.instance.UpdateCount(_selectedTower);
+    UpgradeUIManager.instance.UpdateSellValue(_selectedTower);
+  }
+
+
+  /**
+   * Retrieves the selected tower.
+   * 
+   * @return Tower - the current selected tower.
+   */
+  public Tower GetSelectedTower() {
+    return _selectedTower;
   }
 
 

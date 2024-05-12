@@ -269,17 +269,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Eger
-  fireRate: 1
+  fireCooldown: 1
   radius: 2
   damage: 1
   speed: 10
   pierce: 1
   AOE: 0
   damageTypes: 
-  price: 250
+  upgrades:
+  - MAX_LEVEL: 3
+    upgradeType: 0
+    value: 1
+    price: 100
+    priceScaling: 1
+  - MAX_LEVEL: 3
+    upgradeType: 1
+    value: 0.25
+    price: 100
+    priceScaling: 1
+  - MAX_LEVEL: 3
+    upgradeType: 2
+    value: 0.5
+    price: 150
+    priceScaling: 1
+  - MAX_LEVEL: 3
+    upgradeType: 3
+    value: 1
+    price: 200
+    priceScaling: 1
+  maxUpgrades: 6
+  upgradeCount: 0
   radiusDisplay: {fileID: 6501745969920620487}
   projectile: {fileID: 2691079788069095535, guid: 5266f8fec25f1a04a9b25707e0576501, type: 3}
   mesh: {fileID: 5456539569036691567}
+  price: 250
 --- !u!58 &-5463628423918905619
 CircleCollider2D:
   m_ObjectHideFlags: 0

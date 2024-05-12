@@ -47,12 +47,12 @@ public class Player : MonoBehaviour {
         Tower tower = hit.collider.gameObject.GetComponent<Tower>();
         // Collider is a tower and exists, select it.
         if (tower != null) {
-          // If there is a tower selected currently, unselect it.
-          if (selectedTower != null) {
+          // If there is a different tower selected currently, unselect it.
+          if (selectedTower != null && selectedTower != tower) {
             UnselectTower();
+          } else {  // Is a different tower, select it.
+            SelectTower(tower);
           }
-
-          SelectTower(tower);
           return;
         }
 
@@ -131,7 +131,7 @@ public class Player : MonoBehaviour {
     // Create a visualization for the user to see while placing.
     GameObject ghost = Instantiate(currentPlaceBuffer.mesh, Vector3.zero, Quaternion.identity);
     GameObject radius = Instantiate(currentPlaceBuffer.radiusDisplay, Vector3.zero, Quaternion.identity);
-    radius.transform.localScale = new Vector2(currentPlaceBuffer.radius, currentPlaceBuffer.radius);
+    radius.transform.localScale = new Vector2(currentPlaceBuffer.range, currentPlaceBuffer.range);
 
     while (isPlacing) {
       // Player died; cancel placement.

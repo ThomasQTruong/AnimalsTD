@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour {
   public int health;
   public int currentRound = 0;
   public int animalsLeft = 0;
+  public float sellRatio = 0.8f;  // The ratio for the amount of money gained back from selling.
 
   private bool _autoStartRound = false;        // The toggle for auto starting rounds.
   private bool _startCoroutineActive = false;  // Whether the start coroutine is active or not.
@@ -184,5 +185,33 @@ public class GameManager : MonoBehaviour {
     // Reload current scene.
     GameData.instance.reloadType = ReloadType.Quit;
     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+  }
+
+
+  /**
+   * Upgrades the tower based on the type of upgrade it is.
+   */
+  public void UpgradeTower(Upgrade upgrade) {
+    Tower tower = GameUIManager.instance.GetSelectedTower();
+    if (tower == null) {
+      return;
+    }
+
+    // Update tower's stats with type.
+    switch (upgrade.upgradeType) {
+      case UpgradeType.Damage:
+        tower.damage += (int)(upgrade.value);
+        break;
+      case UpgradeType.Fire_Rate:
+        tower.fireCooldown -= (upgrade.value * tower.fireCooldown);
+        break;
+      case UpgradeType.Range:
+        tower.range += upgrade.value;
+        tower.UpdateRadius();
+        break;
+      case UpgradeType.Pierce:
+        tower.pierce += (int)(upgrade.value);
+        break;
+    }
   }
 }

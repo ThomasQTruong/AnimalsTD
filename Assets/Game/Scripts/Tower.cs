@@ -6,20 +6,29 @@ using UnityEngine;
  */
 public class Tower : MonoBehaviour {
   public new string name;
-  public float fireRate = 1;
-  public float radius = 1;
+  public float fireCooldown = 1;
+  public float range = 1;
 
   public int damage = 1;
   public float speed = 11;
   public int pierce = 1;
   public bool AOE = false;
   public DamageType[] damageTypes;  // The types of damage the tower does.
+  public Upgrade[] upgrades;        // The possible upgrades the tower has.
+  public int maxUpgrades;           // Amount of total upgrades allowed for the tower.
+  public int upgradeCount = 0;      // Current amount of upgrades.
 
-  public int price = 20;  // How much the tower costs.
   public GameObject radiusDisplay;
   public Projectile projectile;
   public GameObject mesh;
   private float _nextFire;
+  public int price = 20;  // How much the tower costs.
+  private int _value;     // Total value of the tower (price + upgrades).
+
+
+  private void Awake() {
+    _value = price;
+  }
 
 
   private void Update() {
@@ -36,7 +45,7 @@ public class Tower : MonoBehaviour {
       Animal animal = GetClosestToEnd();
       // Animal still exists.
       if (animal != null) {
-        _nextFire = Time.time + fireRate;
+        _nextFire = Time.time + fireCooldown;
         Shoot(animal);
       }
     }
@@ -50,7 +59,15 @@ public class Tower : MonoBehaviour {
    */
   public void Selected(bool isSelected) {
     radiusDisplay.SetActive(isSelected);
-    radiusDisplay.transform.localScale = new Vector2(radius, radius);
+    UpdateRadius();
+  }
+
+
+  /**
+   * Updates the radius size.
+   */
+  public void UpdateRadius() {
+    radiusDisplay.transform.localScale = new Vector2(range, range);
   }
 
 
@@ -61,7 +78,7 @@ public class Tower : MonoBehaviour {
    */
   private Animal[] GetAllAnimalsInRange() {
     // Gets all overlapping Collider2Ds.
-    Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
+    Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range);
     Animal[] animals = new Animal[colliders.Length];
 
     // No animals near.
@@ -126,10 +143,30 @@ public class Tower : MonoBehaviour {
 
 
   /**
+   * Retrives the value of the tower.
+   * 
+   * @return int - the value of the tower.
+   */
+  public int GetValue() {
+    return _value;
+  }
+
+
+  /**
+   * Changes the value by a given amount.
+   * 
+   * @param amount - the amount to change the value by.
+   */
+  public void ChangeValue(int amount) {
+    _value += amount;
+  }
+
+
+  /**
    * Draws the radius of the tower (only for editor, not user).
    */
   private void OnDrawGizmosSelected() {
     Gizmos.color = Color.red;
-    Gizmos.DrawWireSphere(transform.position, radius);
+    Gizmos.DrawWireSphere(transform.position, range);
   }
 }

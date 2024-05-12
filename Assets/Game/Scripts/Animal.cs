@@ -113,10 +113,16 @@ public class Animal : MonoBehaviour {
    * @param damageTypes - the type(s) of the damage.
    */
   public void TakeDamage(int damage, DamageType[] damageTypes) {
+    // Prevent duplicate death.
+    if (health <= 0) {
+      return;
+    }
+
     health -= damage;
     
     // Animal died.
-    if (health == 0) {
+    if (health <= 0) {
+      health = 0;  // Prevent duplicate death.
       Die();
     }
   }
