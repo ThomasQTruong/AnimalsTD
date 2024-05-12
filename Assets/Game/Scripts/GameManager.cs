@@ -55,16 +55,7 @@ public class GameManager : MonoBehaviour {
   private IEnumerator SpawnAnimals() {
     // For every animal spawn for the round.
     foreach (AnimalSpawn spawn in RoundManager.instance.spawnList) {
-      // For every count.
-      for (int i = 0; i < spawn.count; ++i) {
-        // Create animal.
-        Instantiate(spawn.animal, GameData.instance.track.GetWaypointPosition(0), Quaternion.identity);
-        ++animalsLeft;
-
-        yield return new WaitForSeconds(spawn.spawnRate);
-      }
-      // Finished spawning, increment for next round.
-      spawn.count += spawn.incrementPerRound;
+      StartCoroutine(SpawnAnimal(spawn));
       yield return new WaitForSeconds(RoundManager.instance.spawnDelay);
     }
 
@@ -76,6 +67,25 @@ public class GameManager : MonoBehaviour {
     // No animals left, end round and give money.
     _roundInProgress = false;
     money += RoundManager.instance.moneyPerRound;
+  }
+
+
+  /**
+   * Starts spawning for an animal.
+   * 
+   * @param spawn - the animal to spawn.
+   */
+  private IEnumerator SpawnAnimal(AnimalSpawn spawn) {
+    // For every count.
+    for (int i = 0; i < spawn.count; ++i) {
+      // Create animal.
+      Instantiate(spawn.animal, GameData.instance.track.GetWaypointPosition(0), Quaternion.identity);
+      ++animalsLeft;
+
+      yield return new WaitForSeconds(spawn.spawnRate);
+    }
+    // Finished spawning, increment for next round.
+    spawn.count += spawn.incrementPerRound;
   }
 
 
