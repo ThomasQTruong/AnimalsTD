@@ -86,7 +86,7 @@ public class GameUIManager : MonoBehaviour {
   public void UpdateInfoUI() {
     healthText.text = "Health: " + GameManager.instance.health;
     moneyText.text = "Money: " + GameManager.instance.money;
-    roundText.text = "Round: " + GameManager.instance.currentRound;
+    roundText.text = "Round: " + GameManager.instance.currentRound + "/" + GameManager.instance.winRound;
   }
 
 

@@ -59,7 +59,7 @@ public class Animal : MonoBehaviour {
         if (GameManager.instance.health <= 0) {
           // Set to 0 for no negative health.
           GameManager.instance.health = 0;
-          GameManager.instance.EndGame();
+          GameManager.instance.LoseGame();
         }
         --GameManager.instance.animalsLeft;
       }

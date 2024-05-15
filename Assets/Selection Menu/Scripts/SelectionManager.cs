@@ -24,13 +24,14 @@ public class SelectionManager : MonoBehaviour {
   public GameObject game;                 // The game object.
   public GameObject mapSelector;          // The map selector UI object.
 
-  // Difficulty Selection Info
-  private readonly string[,] _difficultyInfo = {{"Easy", "1000", "100"},  // Easy
-                                                {"Medium", "800", "65"},  // Medium
-                                                {"Hard", "600", "30"}};   // Hard
+  // Difficulty Selection Info:                   Name      Cash   Life   Rounds
+  private readonly string[,] _difficultyInfo = {{"Easy",   "1000", "100", "40"},
+                                                {"Medium", "800",  "65",  "60"},
+                                                {"Hard",   "600",  "30",  "80"}};
   public TMP_Text difficultyDisplay;
-  public TMP_Text money;
-  public TMP_Text health;
+  public TMP_Text cash;
+  public TMP_Text life;
+  public TMP_Text rounds;
 
 
   public void Awake() {
@@ -81,8 +82,9 @@ public class SelectionManager : MonoBehaviour {
    */
   public void UpdateDifficultyInfo() {
     difficultyDisplay.text = _difficultyInfo[GameData.instance.difficulty, 0];
-    money.text = "$" + _difficultyInfo[GameData.instance.difficulty, 1];
-    health.text = _difficultyInfo[GameData.instance.difficulty, 2];
+    cash.text = "$" + _difficultyInfo[GameData.instance.difficulty, 1];
+    life.text = _difficultyInfo[GameData.instance.difficulty, 2];
+    rounds.text = _difficultyInfo[GameData.instance.difficulty, 3];
   }
 
 
@@ -106,6 +108,7 @@ public class SelectionManager : MonoBehaviour {
 
     GameManager.instance.money = Int32.Parse(_difficultyInfo[GameData.instance.difficulty, 1]);
     GameManager.instance.health = Int32.Parse(_difficultyInfo[GameData.instance.difficulty, 2]);
+    GameManager.instance.winRound = Int32.Parse(_difficultyInfo[GameData.instance.difficulty, 3]);
   }
 
 

@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour {
   public int money;
   public int health;
   public int currentRound = 0;
+  public int winRound;
   public int animalsLeft = 0;
   public float sellRatio = 0.8f;  // The ratio for the amount of money gained back from selling.
 
@@ -140,7 +141,7 @@ public class GameManager : MonoBehaviour {
   /**
    * Player lost the game (no health left).
    */
-  public void EndGame() {
+  public void LoseGame() {
     Time.timeScale = 0;
     gameOver.SetActive(true);
     GameOver.instance.UpdateRound();
