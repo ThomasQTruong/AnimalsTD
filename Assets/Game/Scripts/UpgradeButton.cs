@@ -60,8 +60,8 @@ public class UpgradeButton : MonoBehaviour {
     }
 
     // Can afford and upgrade; proceed with upgrading.
-    upgrade.UpgradeLevel();
     GameManager.instance.money -= upgrade.price;
+    upgrade.UpgradeLevel();
     GameUIManager.instance.UpgradedTower(upgrade);
     UpdatePrice();
     GameManager.instance.UpgradeTower(upgrade);

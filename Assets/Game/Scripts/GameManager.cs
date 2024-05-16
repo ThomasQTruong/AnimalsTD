@@ -253,6 +253,10 @@ public class GameManager : MonoBehaviour {
         break;
       case UpgradeType.Fire_Rate:
         tower.fireCooldown -= (upgrade.value * tower.fireCooldown);
+        // Cap cooldown to 0.1.
+        if (tower.fireCooldown < 0.1f) {
+          tower.fireCooldown = 0.1f;
+        }
         break;
       case UpgradeType.Range:
         tower.range += upgrade.value;

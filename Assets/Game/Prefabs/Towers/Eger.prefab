@@ -280,17 +280,17 @@ MonoBehaviour:
   - MAX_LEVEL: 3
     upgradeType: 0
     value: 1
-    price: 400
+    price: 350
     priceScaling: 1.5
   - MAX_LEVEL: 3
     upgradeType: 1
-    value: 0.75
+    value: 0.5
     price: 400
     priceScaling: 1.5
   - MAX_LEVEL: 3
     upgradeType: 2
     value: 0.5
-    price: 300
+    price: 250
     priceScaling: 1.25
   - MAX_LEVEL: 3
     upgradeType: 3
