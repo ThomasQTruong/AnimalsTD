@@ -16,6 +16,10 @@ public class GameUIManager : MonoBehaviour {
   public TMP_Text roundText;
 
   private Tower _selectedTower;
+
+  // Game Over/Win UI texts.
+  public TMP_Text gameOverRound;
+  public TMP_Text winRound;
  
 
   /**
@@ -86,7 +90,13 @@ public class GameUIManager : MonoBehaviour {
   public void UpdateInfoUI() {
     healthText.text = "Health: " + GameManager.instance.health;
     moneyText.text = "Money: " + GameManager.instance.money;
-    roundText.text = "Round: " + GameManager.instance.currentRound + "/" + GameManager.instance.winRound;
+
+    // Not over the winning round (not in free play): display out of winRound.
+    if (GameManager.instance.currentRound <= GameManager.instance.winRound) {
+      roundText.text = "Round: " + GameManager.instance.currentRound + "/" + GameManager.instance.winRound;
+    } else {  // Is freeplay, just display round number.
+      roundText.text = "Round: " + GameManager.instance.currentRound;
+    }
   }
 
 
@@ -152,6 +162,22 @@ public class GameUIManager : MonoBehaviour {
    */
   public Tower GetSelectedTower() {
     return _selectedTower;
+  }
+
+
+  /**
+   * Updates the round text for the game over UI.
+   */
+  public void GameOverUpdateRound() {
+    gameOverRound.text = "Round: " + GameManager.instance.currentRound;
+  }
+
+
+  /**
+   * Updates the round text for the win UI.
+   */
+  public void WinUpdateRound() {
+    winRound.text = "Round: " + GameManager.instance.currentRound + "/" + GameManager.instance.winRound;
   }
 
 

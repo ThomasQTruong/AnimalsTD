@@ -19,7 +19,8 @@ public enum DamageType {
  */
 public class GameManager : MonoBehaviour {
   public static GameManager instance;     // Limits to one instance.
-  public GameObject gameOver;             // Game over screen object.
+  public GameObject gameOverUI;           // Game over screen object.
+  public GameObject winUI;                // Game win screen object.
   public GameObject forfeitConfirmation;  // Forfeit confirmation UI.
 
   // Game stats.
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour {
   private bool _autoStartRound = false;        // The toggle for auto starting rounds.
   private bool _startCoroutineActive = false;  // Whether the start coroutine is active or not.
   private bool _roundInProgress;               // Whether the round is in progress or not.
+  private int _spawnersWorking = 0;            // Amount of spawners currently at work.
 
 
   /**
@@ -60,14 +62,24 @@ public class GameManager : MonoBehaviour {
       yield return new WaitForSeconds(RoundManager.instance.spawnDelay);
     }
 
-    // Wait until there are no animals left.
-    while (animalsLeft > 0) {
+    // Wait until there are no animals left and no spawners working.
+    while (animalsLeft > 0 || _spawnersWorking > 0) {
       yield return null;
     }
 
-    // No animals left, end round and give money.
-    _roundInProgress = false;
-    money += RoundManager.instance.moneyPerRound;
+    // User died in the round.
+    if (health <= 0) {
+      yield break;
+    }
+
+    // Round ended and user is alive: user won the game.
+    if (currentRound == winRound) {
+      WinGame();
+    } else {  // User did not win yet/is in free play.
+      // Toggle in-progress and give money.
+      _roundInProgress = false;
+      money += RoundManager.instance.moneyPerRound;
+    }
   }
 
 
@@ -77,6 +89,7 @@ public class GameManager : MonoBehaviour {
    * @param spawn - the animal to spawn.
    */
   private IEnumerator SpawnAnimal(AnimalSpawn spawn) {
+    ++_spawnersWorking;
     // For every count.
     for (int i = 0; i < spawn.count; ++i) {
       // Create animal.
@@ -87,6 +100,7 @@ public class GameManager : MonoBehaviour {
     }
     // Finished spawning, increment for next round.
     spawn.count += spawn.incrementPerRound;
+    --_spawnersWorking;
   }
 
 
@@ -143,8 +157,32 @@ public class GameManager : MonoBehaviour {
    */
   public void LoseGame() {
     Time.timeScale = 0;
-    gameOver.SetActive(true);
-    GameOver.instance.UpdateRound();
+    gameOverUI.SetActive(true);
+    GameUIManager.instance.GameOverUpdateRound();
+  }
+
+
+  /**
+   * Player won the game (reached winRound).
+   */
+  public void WinGame() {
+    _autoStartRound = !_autoStartRound;
+    Time.timeScale = 0;
+    winUI.SetActive(true);
+    GameUIManager.instance.WinUpdateRound();
+  }
+
+
+  /**
+   * Player chose to free play.
+   */
+  public void FreePlay() {
+    _autoStartRound = !_autoStartRound;
+    Time.timeScale = 1;
+    winUI.SetActive(false);
+
+    _roundInProgress = false;
+    money += RoundManager.instance.moneyPerRound;
   }
 
 
