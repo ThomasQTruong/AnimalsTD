@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour {
   private IEnumerator SpawnAnimal(AnimalSpawn spawn) {
     ++_spawnersWorking;
     // For every count.
-    for (int i = 0; i < spawn.count; ++i) {
+    for (int i = 0; i < (int)(spawn.count); ++i) {
       // Create animal.
       Instantiate(spawn.animal, GameData.instance.track.GetWaypointPosition(0), Quaternion.identity);
       ++animalsLeft;

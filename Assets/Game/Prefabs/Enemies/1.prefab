@@ -51,7 +51,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0}
   damage: 1
   health: 1
-  value: 0
+  value: 1
   resistances: 0
 --- !u!58 &1277082906600007640
 CircleCollider2D:

@@ -280,23 +280,23 @@ MonoBehaviour:
   - MAX_LEVEL: 3
     upgradeType: 0
     value: 1
-    price: 100
-    priceScaling: 1
+    price: 400
+    priceScaling: 1.5
   - MAX_LEVEL: 3
     upgradeType: 1
-    value: 0.25
-    price: 100
-    priceScaling: 1
+    value: 0.75
+    price: 400
+    priceScaling: 1.5
   - MAX_LEVEL: 3
     upgradeType: 2
     value: 0.5
-    price: 150
-    priceScaling: 1
+    price: 300
+    priceScaling: 1.25
   - MAX_LEVEL: 3
     upgradeType: 3
     value: 1
-    price: 200
-    priceScaling: 1
+    price: 500
+    priceScaling: 2
   maxUpgrades: 6
   upgradeCount: 0
   radiusDisplay: {fileID: 6501745969920620487}
