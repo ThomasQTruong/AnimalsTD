@@ -6,15 +6,15 @@ Darren Manalo
 
 ## Info
 - Defend yourself against herds of wild ~~animals~~ cats!
-  - (Insert image of cats).
+  - ![image](https://github.com/ThomasQTruong/AnimalsTD/assets/58405482/0bfc0854-88e7-405e-b563-c0a230a19e53)
 - Purchase a variety of towers from the shop to defend.
-  - (Insert image of shop UI).
+  - ![image](https://github.com/ThomasQTruong/AnimalsTD/assets/58405482/2c1f4e24-78ad-40de-a26f-33083deed597)
 - Upgrade your towers to become stronger.
-  - (Insert image of upgrade UI).
+  - ![image](https://github.com/ThomasQTruong/AnimalsTD/assets/58405482/ae51660d-0c57-4c9c-b3e5-46f42078e7f1)
 - Choose from a selection of maps (only one currently).
-  - (Insert image of map selection).
+  - ![image](https://github.com/ThomasQTruong/AnimalsTD/assets/58405482/bba88a2e-5afe-45c9-8a11-8a323b467c6f)
 - Challenge yourself with different difficulties.
-  - (Insert image of difficulties UI).
+  - ![image](https://github.com/ThomasQTruong/AnimalsTD/assets/58405482/f07d9e9d-b445-49b8-ae50-9218aa82499a)
 
 ## Plans
 - Implement proper towers (non-discord image towers).
