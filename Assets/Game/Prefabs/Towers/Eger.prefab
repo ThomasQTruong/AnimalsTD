@@ -177,7 +177,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7086095294809165707}
-  - component: {fileID: 8789404990587723933}
   - component: {fileID: 2302905127869010657}
   - component: {fileID: -5463628423918905619}
   m_Layer: 12
@@ -204,58 +203,6 @@ Transform:
   - {fileID: 8106394267812503360}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8789404990587723933
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8551930611947656299}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cb844298d8db0848bb67ca5863c77ae, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.46, y: 0.43}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!114 &2302905127869010657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,40 +216,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Eger
-  fireCooldown: 1
-  range: 1
-  damage: 1
-  speed: 10
+  fireCooldown: 1.5
+  range: 3
+  damage: 25
+  speed: 14
   pierce: 1
   AOE: 0
   damageTypes: 
   upgrades:
   - MAX_LEVEL: 3
     upgradeType: 0
-    value: 1
-    price: 350
+    value: 5
+    price: 450
     priceScaling: 1.5
   - MAX_LEVEL: 3
     upgradeType: 1
-    value: 0.5
-    price: 400
-    priceScaling: 1.5
+    value: 0.35
+    price: 1000
+    priceScaling: 2
   - MAX_LEVEL: 3
     upgradeType: 2
     value: 0.5
-    price: 250
-    priceScaling: 1.25
-  - MAX_LEVEL: 3
+    price: 500
+    priceScaling: 1.5
+  - MAX_LEVEL: 2
     upgradeType: 3
     value: 1
-    price: 500
+    price: 1000
     priceScaling: 2
   maxUpgrades: 6
   upgradeCount: 0
   radiusDisplay: {fileID: 6501745969920620487}
   projectile: {fileID: 2691079788069095535, guid: 5266f8fec25f1a04a9b25707e0576501, type: 3}
   mesh: {fileID: 5456539569036691567}
-  price: 250
+  price: 1500
 --- !u!58 &-5463628423918905619
 CircleCollider2D:
   m_ObjectHideFlags: 0

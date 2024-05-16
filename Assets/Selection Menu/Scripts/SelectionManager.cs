@@ -27,8 +27,9 @@ public class SelectionManager : MonoBehaviour {
   // Difficulty Selection Info:                   Name      Cash   Life   Rounds
   private readonly string[,] _difficultyInfo = {{"Easy",   "1000", "100", "40"},
                                                 {"Medium", "800",  "65",  "60"},
-                                                {"Hard",   "600",  "30",  "80"}};
-  public TMP_Text difficultyDisplay;
+                                                {"Hard",   "600",  "30",  "80"},
+                                                {"Cheat",  "99999","1",   "80"}};
+public TMP_Text difficultyDisplay;
   public TMP_Text cash;
   public TMP_Text life;
   public TMP_Text rounds;

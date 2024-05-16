@@ -26,7 +26,7 @@ public class UpgradeButton : MonoBehaviour {
     }
 
     // Set price.
-    priceDisplay.text = "$" + upgrade.price;
+    UpdatePrice();
   }
 
 

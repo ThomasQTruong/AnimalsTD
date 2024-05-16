@@ -5,36 +5,22 @@ Phu Truong\
 Darren Manalo
 
 ## Info
-- Map/Enemies/Towers/Stats are test variants.
-- Stats vary based on difficulty.
-- Enemies follow the track.
-- Can place towers.
-- Can right-click to cancel.
-- Has placement visualization.
-- Cannot place ontop of Shop UI.
-- Cannot go negative in money (does not place).
-  - Can still see placement visualization with insufficient balance.
-- Prof. Eger: works.
-  - Does actually shoot.
-  - Costs $250.
-- Can sell towers (80% money back).
+- Defend yourself against herds of wild ~~animals~~ cats!
+  - (Insert image of cats).
+- Purchase a variety of towers from the shop to defend.
+  - (Insert image of shop UI).
+- Upgrade your towers to become stronger.
+  - (Insert image of upgrade UI).
+- Choose from a selection of maps (only one currently).
+  - (Insert image of map selection).
+- Challenge yourself with different difficulties.
+  - (Insert image of difficulties UI).
 
 ## Plans
-- Create actual towers/enemies/map.
-  - Implement splash damage towers.
+- Implement proper towers (non-discord image towers).
+- Implement tower stats UI.
+- Implement explosion damage towers.
 - Balance the prices, health, and damage.
-
-## Completed Plans
-- Create main menu.
-- Implement tower upgrades.
-- Implement pierce attacks.
-- Make Shop UI prettier.
-- Prevent placement on the track.
-- Implement auto next round.
-- Create Easy/Normal/Hard difficulties.
-- Implement game over.
-- Reconfigure the rounds and add more rounds.
-  - Want to create a good algorithm for near-infinite rounds.
 
 ## Credits
 #### Development Guide(s)
@@ -43,7 +29,10 @@ Darren Manalo
 - [Resolution Scaling](https://www.youtube.com/watch?v=hXU-ZJb6GHw)
 - [Shop UI](https://www.youtube.com/watch?v=1-_-716Ouy8)
 - [Auto-resizing Text Background](https://www.youtube.com/watch?v=qlKaFJS6RMg)
+
 #### Assets
 - [Images: Animal Cube - Cats](https://assetstore.unity.com/packages/2d/animal-cube-cat-series-2d-asset-208164)
 - [Images: Animal Cube - Ducks](https://assetstore.unity.com/packages/2d/animal-cube-duck-series-2d-asset-222908)
+- [F Projectile Image](https://stock.adobe.com/search?k=f+grade&asset_id=430383987)
+- [Ping Projectile Image](https://tenor.com/view/angryping-grayson-ping-mad-gif-19171743)
 - [Plugin: Auto Letterbox (Auto Scaling)](https://assetstore.unity.com/packages/tools/camera/auto-letterbox-56814)
