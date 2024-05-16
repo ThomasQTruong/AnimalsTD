@@ -183,8 +183,8 @@ public class Player : MonoBehaviour {
         PlaceTower(mousePos);
         GameManager.instance.money -= currentPlaceBuffer.price;
         currentPlaceBuffer = null;
-      } else if (Input.GetMouseButtonDown(1)) {
-        // User right clicked (cancel).
+      } else if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape)) {
+        // User right clicked or pressed ESC key: cancel.
         isPlacing = false;
         // Remove visualization after placing.
         Destroy(ghost);

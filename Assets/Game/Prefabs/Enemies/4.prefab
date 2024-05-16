@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8936482576019147648}
   - component: {fileID: 1560857780473855347}
   m_Layer: 0
-  m_Name: TestMob1
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: def92c07e2883994c95356888a9143b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 612aa6778b5b74c4cb81d873a6b150e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 2302905127869010657}
   - component: {fileID: -5463628423918905619}
   m_Layer: 12
-  m_Name: TestTower1
+  m_Name: Eger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
